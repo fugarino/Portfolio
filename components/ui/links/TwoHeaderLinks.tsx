@@ -1,0 +1,19 @@
+interface ITwoHeaderLinksProps {
+  leftLinkComponent: React.ReactNode;
+  rightLinkComponent: React.ReactNode;
+}
+
+const TwoHeaderLinks = ({
+  leftLinkComponent,
+  rightLinkComponent,
+}: ITwoHeaderLinksProps) => {
+  return (
+    <aside className="ml-[20px] text-[.75rem] relative top-[4.5px] text-[#5e5e5e]">
+      <>
+        {leftLinkComponent} / {rightLinkComponent}
+      </>
+    </aside>
+  );
+};
+
+export default TwoHeaderLinks;
