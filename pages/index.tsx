@@ -1,12 +1,14 @@
 import type { NextPage } from "next";
-import ToggleTheme from "../components/ui/buttons/ToggleTheme";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
     <div>
       <h1>Hello world</h1>
       <button>click me</button>
-      <ToggleTheme />
+      <Link href="/about">
+        <a>About page</a>
+      </Link>
     </div>
   );
 };
