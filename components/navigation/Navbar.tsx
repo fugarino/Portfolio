@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HeaderLink from "../ui/links/HeaderLink";
 import TwoHeaderLinks from "../ui/links/TwoHeaderLinks";
+import Menu from "./Menu";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
           rightLinkComponent={<HeaderLink linkURL="/" text="copy email" />}
         />
       </div>
-      <div>hello</div>
+      <Menu />
     </header>
   );
 };

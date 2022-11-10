@@ -8,7 +8,7 @@ const TwoHeaderLinks = ({
   rightLinkComponent,
 }: ITwoHeaderLinksProps) => {
   return (
-    <aside className="ml-[20px] text-[.75rem] relative top-[4.5px] text-[#5e5e5e]">
+    <aside className="ml-[17px] text-[.75rem] relative top-[4.5px] text-[#5e5e5e]">
       <>
         {leftLinkComponent} / {rightLinkComponent}
       </>
