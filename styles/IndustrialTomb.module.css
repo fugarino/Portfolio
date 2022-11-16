@@ -1,0 +1,29 @@
+.sub {
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  color: #eedf54;
+}
+
+.sectionHeader {
+  color: #535353;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 6vw, 6rem);
+}
+
+.p {
+  color: #d1d1d1;
+  font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+  margin-top: 0.5rem;
+}
+
+.icon {
+  width: clamp(2.5rem, 4vw, 5rem);
+}
+
+.text {
+  font-size: clamp(0.5rem, 3vw, 2rem);
+}
+
+.tech {
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+}

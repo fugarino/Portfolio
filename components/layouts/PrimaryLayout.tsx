@@ -10,9 +10,7 @@ const PrimaryLayout = ({ children }: IPrimaryLayoutProps) => {
       <Head>
         <title>Portfolio</title>
       </Head>
-      <div className="font-[Poppins] max-w-[1620px] px-[1.7rem] py-1 mx-auto select-none overflow-hidden">
-        {children}
-      </div>
+      {children}
     </>
   );
 };
