@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import MenuListButton from "../ui/buttons/menu-list-item/MenuListButton";
 import ToggleMenu from "../ui/buttons/toggle-menu/ToggleMenu";
