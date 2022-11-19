@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <header className="flex items-center justify-between">
       <div className="flex items-center">
-        <Link href="/">
-          <a className="font-[700] text-[1.8rem] text-[#ff754e]">CRIS</a>
+        <Link href="/" className="font-[700] text-[1.8rem] text-[#ff754e]">
+          CRIS
         </Link>
         <TwoHeaderLinks
           leftLinkComponent={<HeaderLink linkURL="/" text="download cv" />}
