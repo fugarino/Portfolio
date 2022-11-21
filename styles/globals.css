@@ -6,6 +6,18 @@
   body {
     @apply dark:bg-gray-800 dark:text-gray-100;
   }
+
+  .h2 {
+    @apply text-[#535353] font-[500] text-[clamp(2.5rem,6vw,5rem)];
+  }
+
+  .p {
+    @apply text-[#d1d1d1] font-[300] text-[clamp(.9rem,1.7vw,1.2rem)];
+  }
+
+  strong {
+    @apply font-[600] text-[#e0e0e0];
+  }
 }
 
 html {

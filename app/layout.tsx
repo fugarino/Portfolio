@@ -1,12 +1,18 @@
+"use client";
+
+import { ThemeProvider } from "next-themes";
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
+      </body>
     </html>
-  )
+  );
 }
