@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply dark:bg-gray-800 dark:text-gray-100;
+    @apply dark:bg-[#38383c] dark:text-gray-100;
   }
 
   .h2 {

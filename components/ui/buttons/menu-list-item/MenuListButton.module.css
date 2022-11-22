@@ -1,5 +1,4 @@
 .btn {
-  color: #3a3847;
   font-size: 1.3rem;
   font-weight: 600;
   transition: color 0.1s ease;
@@ -14,7 +13,7 @@
 }
 .btnVisible {
   opacity: 1;
-  margin: 0.9rem 0;
+  margin: 0.7rem 0;
   transform: translateX(40px);
 }
 
