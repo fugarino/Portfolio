@@ -4,6 +4,7 @@ interface IMenuListButton {
   text: string;
   isMenuOpen: boolean;
   darkModeBtn?: boolean;
+  darkBtnText?: string;
   handleDarkModeClick?: () => void;
 }
 
@@ -11,6 +12,7 @@ const MenuListButton = ({
   text,
   isMenuOpen,
   darkModeBtn,
+  darkBtnText,
   handleDarkModeClick,
 }: IMenuListButton) => {
   if (darkModeBtn) {
@@ -21,7 +23,7 @@ const MenuListButton = ({
         }`}
       >
         <button className={styles.btn} onClick={handleDarkModeClick}>
-          {text}
+          {darkBtnText === "light" ? "DarkMode" : "Light Mode"}
         </button>
       </li>
     );

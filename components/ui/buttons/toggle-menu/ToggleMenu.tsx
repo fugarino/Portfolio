@@ -8,7 +8,7 @@ interface IToggleMenuProps {
 const ToggleMenu = ({ isMenuOpen, handleMenuClick }: IToggleMenuProps) => {
   return (
     <button
-      className={`w-[33px] h-[43px]
+      className={`z-20 w-[33px] h-[43px]
        before:bg-[#3a3847] after:bg-[#3a3847] dark:before:bg-white dark:after:bg-white
       ${isMenuOpen && "translate-y-[4px]"} ${styles.menuBtn} ${
         isMenuOpen && styles.open

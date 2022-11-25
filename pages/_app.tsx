@@ -5,9 +5,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <div className="bg-red-200">
-        <Component {...pageProps} />
-      </div>
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }

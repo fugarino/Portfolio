@@ -7,7 +7,12 @@ import ToggleMenu from "../ui/buttons/toggle-menu/ToggleMenu";
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const [darkBtnText, setDarkBtnText] = useState("");
+  const { theme, setTheme }: any = useTheme();
+
+  useEffect(() => {
+    setDarkBtnText(theme);
+  }, [theme]);
 
   useEffect(() => {
     const handleEscPress = ({ key }: any) => {
@@ -27,11 +32,16 @@ const Menu = () => {
     if (theme === "light") setTheme("dark");
     else setTheme("light");
     setIsMenuOpen(false);
+    if (darkBtnText === "light") {
+      setDarkBtnText("dark");
+    } else {
+      setDarkBtnText("light");
+    }
   };
 
   return (
     <div
-      className={`flex flex-col items-end ${
+      className={`z-10 flex flex-col items-end ${
         isMenuOpen &&
         "fixed top-0 h-screen w-full max-w-[1620px] pr-[3.4rem] bg-white dark:bg-[#38383c] transition-[background-color] duration-150 ease-in"
       }`}
@@ -41,7 +51,7 @@ const Menu = () => {
         className={`${
           isMenuOpen
             ? "flex flex-col items-end justify-center h-[90vh] text-right -translate-x-[40px]"
-            : "h-0 w-0 invisible"
+            : "w-0 h-0 overflow-hidden"
         }`}
       >
         <MenuListButton text="About" isMenuOpen={isMenuOpen} />
@@ -50,6 +60,7 @@ const Menu = () => {
         <MenuListButton text="Contact" isMenuOpen={isMenuOpen} />
         <MenuListButton
           text="Dark Mode"
+          darkBtnText={darkBtnText}
           isMenuOpen={isMenuOpen}
           darkModeBtn={true}
           handleDarkModeClick={handleDarkModeClick}

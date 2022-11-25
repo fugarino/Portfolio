@@ -1,10 +1,10 @@
-import ProjectArticle from "../../components/layouts/ProjectArticle";
+import ProjectArticleLayout from "../../components/layouts/ProjectArticleLayout";
 import ITContentWrapper from "./ITContentWrapper";
 
 const ITContent = () => {
   return (
     <ITContentWrapper>
-      <ProjectArticle title="About" videoURL="/IndustrialTombVideo.mp4">
+      <ProjectArticleLayout title="About" videoURL="/IndustrialTombVideo.mp4">
         <p className="p">
           Industrial Tumb is a <strong>2D Puzzle-Platformer game</strong>.{" "}
           <strong>The game’s objective</strong>, is to use the interactable game
@@ -12,8 +12,8 @@ const ITContent = () => {
           <strong>star rating</strong> based off -{" "}
           <strong>time of completion</strong>.
         </p>
-      </ProjectArticle>
-      <ProjectArticle
+      </ProjectArticleLayout>
+      <ProjectArticleLayout
         alt={true}
         title="Logic"
         videoURL="/IndustrialTombVideo.mp4"
@@ -26,8 +26,8 @@ const ITContent = () => {
           at all times to{" "}
           <strong>create a beautiful ui at all screen sizes</strong>.
         </p>
-      </ProjectArticle>
-      <ProjectArticle title="Map" videoURL="/IndustrialTombVideo.mp4">
+      </ProjectArticleLayout>
+      <ProjectArticleLayout title="Map" videoURL="/IndustrialTombVideo.mp4">
         <p className="p">
           A <strong>16x16 tileset</strong> was used for most of the game’s
           visuals, including the character. The individual collections of tiles
@@ -36,8 +36,8 @@ const ITContent = () => {
           <strong>Disclaimer:</strong> The tileset was not made by me, however
           the logic and map design are mine.
         </p>
-      </ProjectArticle>
-      <ProjectArticle
+      </ProjectArticleLayout>
+      <ProjectArticleLayout
         alt={true}
         title="Collisions"
         videoURL="/IndustrialTombVideo.mp4"
@@ -52,7 +52,7 @@ const ITContent = () => {
           <strong>platforms y position</strong> {"->"}{" "}
           <strong>set player’s y velocity to 0</strong>.
         </p>
-      </ProjectArticle>
+      </ProjectArticleLayout>
     </ITContentWrapper>
   );
 };
