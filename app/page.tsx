@@ -1,10 +1,9 @@
 import { Poppins } from "@next/font/google";
 import type { NextPage } from "next";
-import Link from "next/link";
-import FramerMotion from "../components/FramerMotion";
 import Navbar from "../components/navigation/Navbar";
 import "../styles/globals.css";
 import Hero from "./Hero";
+import Projects from "./Projects";
 
 const customFont = Poppins({
   display: "swap",
@@ -18,8 +17,8 @@ const HomePage: NextPage = () => {
     >
       <Navbar />
       <Hero />
-      <Link href="/about">about</Link>
-      <FramerMotion />
+      <Projects />
+      {/* <FramerMotion /> */}
     </div>
   );
 };

@@ -1,8 +1,12 @@
 import ITombBtn from "./ITombBtn";
 
-const ITombBtns = () => {
+interface IProps {
+  className?: string;
+}
+
+const ITombBtns = ({ className }: IProps) => {
   return (
-    <div className="w-[35%] max-w-[600px]">
+    <div className={`max-w-[600px] ${className}`}>
       <div className="space-x-4 flex">
         <ITombBtn text="Play Game">
           <svg

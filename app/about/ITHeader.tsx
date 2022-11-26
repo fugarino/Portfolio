@@ -20,7 +20,7 @@ const ITHeader = () => {
             <img src="/Group14.svg" alt="game preview image 1" />
           </picture>
         </div>
-        <ITombBtns />
+        <ITombBtns className="w-[35%]" />
       </section>
     </header>
   );
