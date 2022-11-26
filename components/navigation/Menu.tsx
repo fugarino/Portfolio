@@ -43,7 +43,7 @@ const Menu = () => {
     <div
       className={`z-10 flex flex-col items-end ${
         isMenuOpen &&
-        "fixed top-0 h-screen w-full max-w-[1620px] pr-[3.4rem] bg-white dark:bg-[#38383c] transition-[background-color] duration-150 ease-in"
+        "fixed top-0 h-screen w-full max-w-[1620px] pr-[1.7rem] bg-white dark:bg-[#38383c] transition-[background-color] duration-150 ease-in"
       }`}
     >
       <ToggleMenu isMenuOpen={isMenuOpen} handleMenuClick={handleMenuClick} />

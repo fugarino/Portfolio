@@ -9,7 +9,7 @@ const customFont = Kalam({ display: "swap", weight: ["300", "400", "700"] });
 
 const SectionLayout = ({ sectionName, children }: ISectionLayoutProps) => {
   return (
-    <section className="mb-4">
+    <section className="mb-4 px-[1.7rem]">
       <span
         className={`${customFont.className} font-[300] text-[.9rem] text-[#999999]`}
       >

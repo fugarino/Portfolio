@@ -5,8 +5,8 @@ import Menu from "./Menu";
 
 const Navbar = () => {
   return (
-    <header className="flex items-center justify-between">
-      <div className="flex items-center">
+    <header className="flex items-center justify-between pr-[1.7rem]">
+      <div className="flex items-center pl-[1.7rem]">
         <Link href="/" className="font-[700] text-[1.8rem] text-[#ff754e]">
           CRIS
         </Link>

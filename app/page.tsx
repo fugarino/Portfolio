@@ -13,7 +13,7 @@ const customFont = Poppins({
 const HomePage: NextPage = () => {
   return (
     <div
-      className={`${customFont.className} max-w-[1620px] px-[1.7rem] py-1 mx-auto select-none`}
+      className={`${customFont.className} max-w-[1620px] py-1 mx-auto select-none`}
     >
       <Navbar />
       <Hero />
