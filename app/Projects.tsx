@@ -65,7 +65,7 @@ const Projects = () => {
           <div>hello</div>
           <div>hello</div>
         </ProjectLayout>
-        <ProjectLayout alt={true} backgroundColor="bg-[#dbdbdb]">
+        <ProjectLayout alt={true} backgroundColor="bg-[#cbcbcb]">
           <div>hello</div>
           <div>hello</div>
           <div>hello</div>

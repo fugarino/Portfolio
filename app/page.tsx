@@ -8,6 +8,7 @@ import Projects from "./Projects";
 const customFont = Poppins({
   display: "swap",
   weight: ["300", "500", "600", "700"],
+  subsets: ["latin"],
 });
 
 const HomePage: NextPage = () => {
