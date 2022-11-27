@@ -1,0 +1,13 @@
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -250%;
+  }
+}
+.animate {
+  width: 500%;
+  animation: marquee 20s linear infinite;
+  /* transform: translate(0, -50%); */
+}

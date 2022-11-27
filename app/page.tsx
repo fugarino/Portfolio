@@ -4,6 +4,7 @@ import Navbar from "../components/navigation/Navbar";
 import "../styles/globals.css";
 import Hero from "./Hero";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const customFont = Poppins({
   display: "swap",
@@ -19,6 +20,7 @@ const HomePage: NextPage = () => {
       <Navbar />
       <Hero />
       <Projects />
+      <Skills />
       {/* <FramerMotion /> */}
     </div>
   );

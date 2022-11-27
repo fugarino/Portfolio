@@ -12,7 +12,7 @@ const ProjectsSlider = () => {
   const [project, setProject] = useState("slider1");
 
   return (
-    <div className={`${styles.container} w-full mt-8`}>
+    <div className={`${styles.container} w-full mt-8 mb-2`}>
       <input
         type="radio"
         value="slider1"
@@ -87,50 +87,9 @@ const ProjectsSlider = () => {
                 </Link>
               </div>
               <div>
-                <ITombBtns className="w-[100%] md:w-[90%] mt-4" />
+                <ITombBtns className="w-[100%] mt-4" />
               </div>
             </div>
-            {/* <video autoPlay muted loop className="w-full rounded-xl">
-              <source src="/IndustrialTombVideo.mp4" type="video/mp4" />
-            </video>
-            <div
-              className={`${customFont.className} flex flex-col items-center justify-between mt-5`}
-            >
-              <div>
-                <div className="flex flex-col w-full items-center">
-                  <h3 className="w-[90%]">
-                    <picture>
-                      <img src="/Heading3.svg" alt="heading" />
-                    </picture>
-                  </h3>
-                  <h4 className="text-[#EBEB17] text-[0.8rem] mt-[3px] mb-3">
-                    JavaScript Game
-                  </h4>
-                </div>
-                <h5 className="text-[.7rem]">How to play:</h5>
-                <ul className="text-[#DBDBDB] list-disc ml-2 text-[.7rem] my-2">
-                  <li>
-                    Push the movable boxes onto their corresponding pressure
-                    plates
-                  </li>
-                  <li>Press E to interact with the levers</li>
-                </ul>
-                <h5 className="text-[.7rem]">Objective:</h5>
-                <ul className="text-[#DBDBDB] list-disc ml-2 text-[.7rem] mt-2 mb-1">
-                  <li>
-                    Figure out the correct combination to solve the level and
-                    advance.
-                  </li>
-                </ul>
-                <Link
-                  href="/about"
-                  className="text-[#dbdbdb] hover:text-white transition-colors duration-150 ease-out text-[.7rem]"
-                >
-                  Learn more...
-                </Link>
-              </div>
-              <ITombBtns className="w-[100%] md:w-[90%] mt-4" />
-            </div> */}
           </div>
         </label>
 
