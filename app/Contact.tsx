@@ -14,7 +14,7 @@ const Contact = () => {
               className="absolute -top-[52px] left-[80px] w-[9rem]"
             />
           </picture>
-          <div className="relative bg-[#FFE5D4] h-[12rem] rounded-lg mx-4 overflow-hidden flex p-6">
+          <div className="relative bg-[#FFE5D4] h-[12rem] rounded-lg sm:mx-4 overflow-hidden flex p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
