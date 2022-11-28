@@ -81,7 +81,7 @@ const Projects = () => {
           <div>hello</div>
         </ProjectLayout>
       </div>
-      <div className="home:hidden flex items-center justify-center w-full">
+      <div className="home:hidden flex items-center justify-center w-full my-2">
         <ProjectsSlider />
       </div>
     </SectionLayout>

@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Navbar from "../components/navigation/Navbar";
 import "../styles/globals.css";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -23,6 +24,7 @@ const HomePage: NextPage = () => {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
       {/* <FramerMotion /> */}
     </div>
   );
