@@ -2,13 +2,14 @@ import { Poppins } from "@next/font/google";
 import type { NextPage } from "next";
 import Navbar from "../components/navigation/Navbar";
 import "../styles/globals.css";
+import Contact from "./Contact";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
 const customFont = Poppins({
   display: "swap",
-  weight: ["300", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -21,6 +22,7 @@ const HomePage: NextPage = () => {
       <Hero />
       <Projects />
       <Skills />
+      <Contact />
       {/* <FramerMotion /> */}
     </div>
   );
