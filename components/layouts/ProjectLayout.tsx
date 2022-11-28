@@ -12,7 +12,7 @@ const ProjectLayout = ({ alt, backgroundColor, children }: ILayoutProps) => {
   return (
     <article
       className={`${customFont.className}
-      home:flex my-4 home:h-[21rem] ${backgroundColor} rounded-2xl px-4 py-6 lg:w-[95%] max-w-[600px] home:max-w-[1250px] ${
+      flex w-full justify-center my-4 h-[21rem] ${backgroundColor} rounded-2xl px-6 py-6 lg:w-[95%] max-w-[1250px] ${
         alt && "lg:ml-auto"
       }
       `}
