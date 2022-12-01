@@ -4,7 +4,9 @@
 
 @layer base {
   body {
-    @apply dark:bg-[#38383c] dark:text-gray-100 overflow-x-hidden;
+    /* @apply dark:bg-[#1d2229] dark:text-gray-100 overflow-x-hidden; */
+    /* @apply dark:bg-[#303138] dark:text-gray-100 overflow-x-hidden; */
+    @apply dark:bg-[#272b32] dark:text-gray-100 overflow-x-hidden;
   }
 
   .h2 {

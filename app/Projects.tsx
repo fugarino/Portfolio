@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <SectionLayout sectionName="Projects">
       <div className="hidden home:flex home:flex-col">
-        <ProjectLayout alt={true} backgroundColor="bg-[#252525]">
+        <ProjectLayout alt={true} backgroundColor="bg-[#151719]">
           <div className="w-[45%] lg:w-1/2 xl:w-[45%] flex items-center">
             <div className="max-w-[510px]">
               <video autoPlay muted loop className="w-full rounded-xl">
