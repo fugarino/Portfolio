@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <>
-      <div className="bg-[#252525]">
+      <div className="bg-[#252525] min-h-screen">
         <div className="max-w-[1320px] mx-auto px-10 pt-4">
           <ArrowLink linkURL="/" />
           <ITHeader />
