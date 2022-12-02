@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { footerVariants } from "../../utils/motion";
 
 interface IWrapperProps {
   children: React.ReactNode;
@@ -8,11 +9,7 @@ interface IWrapperProps {
 
 const ITContentWrapper = ({ children }: IWrapperProps) => {
   return (
-    <motion.main
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-    >
+    <motion.main variants={footerVariants} initial="hidden" whileInView="show">
       {children}
     </motion.main>
   );
