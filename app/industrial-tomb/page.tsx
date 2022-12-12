@@ -8,7 +8,7 @@ import ITContent from "./ITContent";
 import ITFooter from "./ITFooter";
 import ITHeader from "./ITHeader";
 
-const About = () => {
+const IndustrialTombPage = () => {
   const { theme, setTheme }: any = useTheme();
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <>
-      <div className="bg-[#151719] min-h-screen">
+      <div className="bg-[#151719] min-h-screen overflow-x-hidden">
         <div className="max-w-[1320px] mx-auto px-10 pt-4">
           <ArrowLink linkURL="/" />
           <ITHeader />
@@ -33,4 +33,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default IndustrialTombPage;

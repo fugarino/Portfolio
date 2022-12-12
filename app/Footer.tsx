@@ -1,5 +1,7 @@
-import HeaderLink from "../components/ui/links/HeaderLink";
-import TwoHeaderLinks from "../components/ui/links/TwoHeaderLinks";
+"use client";
+
+import { motion } from "framer-motion";
+import { footerVariants } from "../utils/motion";
 
 const Footer = () => {
   return (
@@ -19,16 +21,23 @@ const Footer = () => {
         </div>
       </aside>
       <div></div>
-      <div className="relative flex space-x-4">
-        <div className="absolute -left-[11.5rem] top-[7px]">
-          <TwoHeaderLinks
-            leftLinkComponent={<HeaderLink linkURL="/" text="download cv" />}
-            rightLinkComponent={<HeaderLink linkURL="/" text="copy email" />}
-          />
-        </div>
-        <span className="font-[700] text-[#ff754e] text-[1.5rem]">
-          &copy; 2022 Fugarino
-        </span>
+      <div className="overflow-hidden">
+        <motion.div
+          variants={footerVariants}
+          initial="hidden"
+          whileInView="show"
+          className="relative flex space-x-4"
+        >
+          {/* <div className="absolute -left-[11.5rem] top-[7px]">
+            <TwoHeaderLinks
+              leftLinkComponent={<HeaderLink linkURL="/" text="download cv" />}
+              rightLinkComponent={<HeaderLink linkURL="/" text="copy email" />}
+            />
+          </div> */}
+          <span className="font-[700] text-[#ff754e] text-[1.5rem]">
+            &copy; 2022 Fugarino
+          </span>
+        </motion.div>
       </div>
     </footer>
   );

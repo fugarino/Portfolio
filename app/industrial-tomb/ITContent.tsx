@@ -6,11 +6,11 @@ const ITContent = () => {
     <ITContentWrapper>
       <ProjectArticleLayout title="About" videoURL="/IndustrialTombVideo.mp4">
         <p className="p">
-          Industrial Tumb is a <strong>2D Puzzle-Platformer game</strong>.{" "}
-          <strong>The game’s objective</strong>, is to use the interactable game
-          objects to reach the “glowy thing”. The player will be given a{" "}
-          <strong>star rating</strong> based off -{" "}
-          <strong>time of completion</strong>.
+          Industrial Tomb is a <strong>2D Puzzle-Platformer game</strong>.{" "}
+          <strong>The game’s objective</strong>, is to{" "}
+          <strong>use the interactable game objects</strong> to reach the “glowy
+          thing”. The player will be given a <strong>star rating</strong> based
+          off - <strong>time of completion</strong>.
         </p>
       </ProjectArticleLayout>
       <ProjectArticleLayout

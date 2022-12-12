@@ -43,7 +43,7 @@ const Projects = () => {
                   </li>
                 </ul>
                 <Link
-                  href="/about"
+                  href="/industrial-tomb"
                   className="text-[#dbdbdb] hover:text-white transition-colors duration-150 ease-out text-[.7rem]"
                 >
                   Learn more...
@@ -97,7 +97,7 @@ const Projects = () => {
         <ProjectLayout backgroundColor="bg-[#ffe62d]">
           <div></div>
         </ProjectLayout>
-        <ProjectLayout alt={true} backgroundColor="bg-[#cbcbcb]">
+        <ProjectLayout alt={true} backgroundColor="bg-[#e8e9eb]">
           <div></div>
         </ProjectLayout>
       </div>

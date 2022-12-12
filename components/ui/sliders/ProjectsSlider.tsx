@@ -80,7 +80,7 @@ const ProjectsSlider = () => {
                   </li>
                 </ul>
                 <Link
-                  href="/about"
+                  href="/industrial-tomb"
                   className="text-[#dbdbdb] hover:text-white transition-colors duration-150 ease-out text-[.7rem]"
                 >
                   Learn more...

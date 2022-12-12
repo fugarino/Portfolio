@@ -48,7 +48,8 @@
   background-color: #ffe62d;
 }
 .card3 {
-  background-color: rgb(238, 238, 238);
+  /* background-color: #cbcbcb; */
+  background-color: #e8e9eb;
 }
 
 #s1:checked ~ .cards #slide2,
