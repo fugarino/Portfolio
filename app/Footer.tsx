@@ -1,8 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { footerVariants } from "../utils/motion";
-
 const Footer = () => {
   return (
     <footer className="relative flex items-center justify-between px-6 mb-1">
@@ -22,12 +17,7 @@ const Footer = () => {
       </aside>
       <div></div>
       <div className="overflow-hidden">
-        <motion.div
-          variants={footerVariants}
-          initial="hidden"
-          whileInView="show"
-          className="relative flex space-x-4"
-        >
+        <div className="relative flex space-x-4">
           {/* <div className="absolute -left-[11.5rem] top-[7px]">
             <TwoHeaderLinks
               leftLinkComponent={<HeaderLink linkURL="/" text="download cv" />}
@@ -37,7 +27,7 @@ const Footer = () => {
           <span className="font-[700] text-[#ff754e] text-[1.5rem]">
             &copy; 2022 Fugarino
           </span>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );
