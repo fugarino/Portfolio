@@ -9,7 +9,7 @@ import styles from "../sliders/ProjectsSlider.module.css";
 const customFont = Press_Start_2P({ display: "swap", weight: "400" });
 
 const ProjectsSlider = () => {
-  const [project, setProject] = useState("slider1");
+  const [project, setProject] = useState("slider3");
 
   return (
     <div className={`${styles.container} w-full mt-8 mb-2`}>
