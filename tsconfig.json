@@ -25,7 +25,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/FramerMotion.tsx"
+    "app/components/FramerMotion.tsx"
   ],
   "exclude": ["node_modules"]
 }
