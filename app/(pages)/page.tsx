@@ -1,7 +1,6 @@
 "use client";
 
 import { Poppins } from "@next/font/google";
-import type { NextPage } from "next";
 import { useEffect, useRef } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import Hero from "../components/hero/Hero";
@@ -17,7 +16,7 @@ const customFont = Poppins({
   subsets: ["latin"],
 });
 
-const HomePage: NextPage = () => {
+const HomePage = () => {
   const scrollRef = useRef<any>("");
   const { scrollTo, setScrollTo }: any = useScroll();
 
