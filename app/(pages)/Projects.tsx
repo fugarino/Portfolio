@@ -1,6 +1,7 @@
 import ProjectLayout from "../components/layouts/ProjectLayout";
 import SectionLayout from "../components/layouts/SectionLayout";
 import ITCard from "../components/projects/industrial-tomb/ITCard";
+import PikachuCard from "../components/projects/pikachu/PikachuCard";
 import ProjectsSlider from "../components/ui/sliders/ProjectsSlider";
 
 const Projects = () => {
@@ -14,7 +15,7 @@ const Projects = () => {
           <ITCard />
         </ProjectLayout>
         <ProjectLayout alt={true} backgroundColor="bg-project-3">
-          <div></div>
+          <PikachuCard />
         </ProjectLayout>
       </div>
       <div className="xl:hidden flex items-center justify-center w-full my-2">

@@ -1,5 +1,8 @@
+import { Press_Start_2P } from "@next/font/google";
 import Link from "next/link";
 import ITombBtns from "../../ui/buttons/IndustrialTombBtn/ITombBtns";
+
+const customFont = Press_Start_2P({ display: "swap", weight: "400" });
 
 const ITCard = () => {
   return (
@@ -11,7 +14,9 @@ const ITCard = () => {
           </video>
         </div>
       </div>
-      <div className="w-[55%] lg:w-1/2 xl:w-[55%] flex flex-col items-center">
+      <div
+        className={`${customFont.className} w-[55%] lg:w-1/2 xl:w-[55%] flex flex-col items-center`}
+      >
         <div className="pl-6 flex flex-col items-center">
           <h3 className="h-6 w-[20rem]" title="Industrial Tomb">
             <picture>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ITSliderCard from "../../projects/industrial-tomb/ITSliderCard";
+import PikachuSliderCard from "../../projects/pikachu/PikachuSliderCard";
 import styles from "../sliders/ProjectsSlider.module.css";
 
 const ProjectsSlider = () => {
@@ -52,7 +53,7 @@ const ProjectsSlider = () => {
             }`}
             onClick={() => setProject("slider2")}
           >
-            <div className="h-full w-full bg-red-300"></div>
+            <PikachuSliderCard />
           </div>
         </label>
 
