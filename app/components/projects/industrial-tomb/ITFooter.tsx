@@ -1,14 +1,14 @@
 const ITFooter = () => {
   return (
     <footer className="flex items-center justify-between w-[calc(100%+6.5rem)] mt-10">
-      <div className="w-[35%] mb-4">
+      <div className="w-[35%]">
         <h3
-          className={`text-sm font-[500] text-white text-[clamp(0.9rem,2vw,1.5rem)]`}
+          className={`font-[500] text-white text-[clamp(1rem,2vw,1.5rem)] mb-2`}
         >
           Technologies:
         </h3>
-        <div className="flex items-center mt-2">
-          <div className="w-[clamp(2.5rem,4vw,5rem)] rounded-md overflow-hidden">
+        <div className="flex items-center">
+          <div className="w-[clamp(2.5rem,4vw,4rem)] rounded-md">
             <svg viewBox="0 0 128 128">
               <path
                 fill="#F0DB4F"
@@ -23,9 +23,9 @@ const ITFooter = () => {
           <span className={`mx-4 text-[#dedede] text-[clamp(0.5rem,3vw,2rem)]`}>
             +
           </span>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center relative top-2">
             <span
-              className={`relative top-1 text-white font-[500] text-[clamp(1rem,2vw,1.5rem)]`}
+              className={`text-white font-[500] text-[clamp(1rem,2vw,1.5rem)] leading-5`}
             >
               HTML 5
             </span>
