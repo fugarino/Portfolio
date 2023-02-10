@@ -1,6 +1,6 @@
 const ITFooter = () => {
   return (
-    <footer className="flex items-center justify-between w-[calc(100%+6.5rem)] mt-10">
+    <footer className="flex items-center justify-between w-[calc(100%+6.5rem)] mt-10 overflow-hidden">
       <div className="w-[35%]">
         <h3
           className={`font-[500] text-white text-[clamp(1rem,2vw,1.5rem)] mb-2`}

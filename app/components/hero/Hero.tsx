@@ -24,7 +24,7 @@ const Hero = () => {
               <br />
               Also, cats are better than dogs.
             </p>
-            <button className="max-w-[clamp(7.6rem,10vw,10rem)] px-2 text-[clamp(.9rem,1.2vw,1.1rem)] mt-3 py-2 rounded-lg border-[1.5px] text-blue-dark border-blue-dark hover:bg-blue-dark hover:text-white dark:text-white dark:border-white hover:dark:text-blue-dark hover:dark:bg-white transition-colors duration-150 ease-out">
+            <button className="max-w-[clamp(7.6rem,10vw,10rem)] px-2 text-[clamp(.9rem,1.2vw,1.1rem)] mt-3 py-2 rounded-lg border-[1.5px] text-white bg-blue-dark dark:bg-dark border-blue-dark hover:bg-white hover:text-blue-dark dark:text-white dark:border-white dark:hover:text-blue-dark hover:dark:bg-white transition-colors duration-150 ease-out">
               Contact me!
             </button>
           </div>
