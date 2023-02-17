@@ -8,11 +8,11 @@
   }
 
   .h2 {
-    @apply text-[#535353] font-[500] text-[clamp(2.5rem,6vw,5rem)];
+    @apply text-[#535353] font-[600] text-[clamp(2.5rem,6vw,5rem)];
   }
 
   .p {
-    @apply text-[#d1d1d1] font-[300] text-[clamp(.9rem,1.7vw,1.2rem)];
+    @apply text-[#d1d1d1] font-[300] text-[clamp(.95rem,1.7vw,1.2rem)];
   }
 
   strong {
@@ -57,4 +57,24 @@
   100% {
     opacity: 0;
   }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa97;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
 }

@@ -11,7 +11,7 @@ module.exports = {
       sm: "480px",
       md: "768px",
       lg: "890px",
-      xl: "1024px",
+      xl: "1017px",
       xxl: "1200px",
     },
     colors: {
@@ -29,6 +29,8 @@ module.exports = {
       "project-1": "#e9e2db",
       "project-2": "#151719",
       "project-3": "#ffe62d",
+      logo: "#C7C7C7",
+      logoAlt: "#6a6a6a",
     },
   },
   plugins: [],
