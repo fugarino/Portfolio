@@ -1,50 +1,206 @@
+"use client";
+
+import { useCallback, useMemo, useRef, useState } from "react";
 import SectionLayout from "../components/layouts/SectionLayout";
 import PaperAirplane from "../components/ui/effects/PaperAirplane";
 
+const scrollToSlide = (
+  slider: HTMLUListElement | null,
+  slideIndex: number,
+  num: number
+) => {
+  if (!slider) return;
+  slider.scrollTo({
+    left: slideIndex * num,
+    behavior: "smooth",
+  });
+};
+
 const Contact = () => {
+  const [sliderPosition, setSliderPosition] = useState(0);
+  const sliderRef = useRef<HTMLUListElement | null>(null);
+
+  const currentSlide = useMemo(() => {
+    return Math.ceil(sliderPosition / 528);
+  }, [sliderPosition]);
+
+  const handlePrevClick = useCallback(() => {
+    scrollToSlide(sliderRef.current, currentSlide - 1, 300);
+  }, [currentSlide]);
+
+  const handleNextClick = useCallback(() => {
+    scrollToSlide(sliderRef.current, currentSlide + 1, 400);
+  }, [currentSlide]);
+
   return (
-    <SectionLayout sectionName="Contact" id="contact">
+    <SectionLayout sectionName="Contact" id="contact" p="0rem" psm="0rem">
       <div className="relative">
         <PaperAirplane />
-        <div className="relative max-w-[800px] mx-auto my-12">
-          <picture>
-            <img
-              src="/laptop.svg"
-              alt="laptop"
-              className="absolute -top-[52px] left-[80px] w-[9rem]"
-            />
-          </picture>
-          <div className="relative bg-[#FFE5D4] h-[12rem] rounded-lg sm:mx-4 overflow-hidden flex flex-col sm:flex-row p-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-              className="absolute -bottom-0 -left-6 sm:-bottom-4 sm:left-0 -z-1"
+        <div className="h-[16rem] sm:h-[17rem] overflow-hidden">
+          <div className="absolute right-[3.2rem] top-0 hidden sm:flex md:hidden">
+            <button
+              className="disabled:text-gray border-[2px] rounded-full w-[22px] h-[22px] mr-2 flex items-center justify-center"
+              disabled={currentSlide === 0}
+              onClick={() => handlePrevClick()}
             >
-              <path
-                fill="#ffdcc4"
-                d="M0,256L48,261.3C96,267,192,277,288,266.7C384,256,480,224,576,202.7C672,181,768,171,864,186.7C960,203,1056,245,1152,229.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-              ></path>
-            </svg>
-            <div className="relative w-full mt-1 sm:mt-0 sm:w-[70%] md:w-[60%] flex items-center justify-center">
-              <div>
-                <h3 className="text-[#3a3847] font-[600] text-[1.8rem]">
-                  Get in touch
-                </h3>
-                <p className="text-[#6c6a75] text-[.9rem] font-[400]">
-                  Have any questions? Shoot me an email.
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="w-3 h-3 relative right-[0.5px]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              className="disabled:text-gray border-[2px] rounded-full w-[22px] h-[22px] flex items-center justify-center"
+              disabled={currentSlide === 1}
+              onClick={() => handleNextClick()}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="w-3 h-3 relative left-[0.5px]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul
+            ref={sliderRef}
+            onScroll={(e) => {
+              setSliderPosition(e.currentTarget.scrollLeft);
+            }}
+            className="flex mt-10 pb-12 md:space-x-4 md:mx-[1.7rem] overflow-x-auto snap-x snap-mandatory"
+          >
+            <li className="bg-[#BED4BE] text-black flex flex-col justify-between p-6 snap-center snap-always h-[11rem] sm:h-[12rem] w-[calc(100%-4rem)] sm:w-[calc(100%-4rem)] sm:max-w-[500px] md:max-w-none md:w-full rounded-lg shrink-0 md:shrink ml-[1.4rem] sm:ml-[1.7rem] md:ml-0 mr-[0.9rem] md:mr-0">
+              <h3 className="font-bold text-[1.8rem] sm:text-[2.5rem]">
+                Get in touch
+              </h3>
+              <div className="flex w-full items-end justify-between">
+                <p className="font-[300] text-left text-[0.95rem] sm:text-[1rem] leading-5">
+                  Have any questions?
+                  <br />
+                  Feel free to send me an email.
                 </p>
+                <aside>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="w-7 h-7"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </aside>
+              </div>
+            </li>
+            <li className="bg-[#efe0c8] text-black p-6 snap-center snap-always h-[11rem] sm:h-[12rem] w-[calc(100%-4rem)] sm:w-[calc(100%-4rem)] sm:max-w-[500px] md:max-w-none md:w-[40%] lg:w-[35%] rounded-lg shrink-0 md:shrink mr-[0.45rem] sm:mr-[1.7rem] md:mr-0">
+              <div className="w-full h-full text-left flex flex-col justify-between">
+                <div className="flex justify-between">
+                  <div></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-8 h-8 text-black"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 13.5l3 3m0 0l3-3m-3 3v-6m1.06-4.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
+                    />
+                  </svg>
+                </div>
+                <div className="text-black space-x-2">
+                  <span className="font-[300] text-[0.95rem] sm:text-[1rem]">
+                    Download
+                  </span>
+                  <span className="font-bold text-[2.5rem] leading-5">CV</span>
+                </div>
+              </div>
+            </li>
+            <li className="md:hidden bg-opacity-0 snap-none h-[20rem] sm:h-[12rem] w-[1rem] rounded-lg shrink-0"></li>
+          </ul>
+        </div>
+        {/* <div className="relative max-w-[1200px] mx-auto my-12 w-full px-2 sm:px-0 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
+          <button className="bg-[#BED4BE] w-full text-black h-[11rem] sm:h-[12rem] flex flex-col justify-between p-6 rounded-lg">
+            <h3 className="font-bold text-[1.8rem] sm:text-[2.5rem]">
+              Get in touch
+            </h3>
+            <div className="flex w-full items-end justify-between">
+              <p className="font-[300] text-left text-[0.95rem] sm:text-[1rem] leading-5">
+                Have any questions?
+                <br />
+                Feel free to send me an email.
+              </p>
+              <aside>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-7 h-7"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </aside>
+            </div>
+          </button>
+          <button className="bg-[#efe0c8] p-6 w-full sm:w-[40%] md:w-[35%] h-[11rem] sm:h-[12rem] rounded-lg">
+            <div className="w-full h-full text-left flex flex-col justify-between">
+              <div className="flex justify-between">
+                <div></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-8 h-8 text-black"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 13.5l3 3m0 0l3-3m-3 3v-6m1.06-4.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
+                  />
+                </svg>
+              </div>
+              <div className="text-black space-x-2">
+                <span className="font-[300] text-[0.95rem] sm:text-[1rem]">
+                  Download
+                </span>
+                <span className="font-bold text-[2.5rem] leading-5">CV</span>
               </div>
             </div>
-            <div className="relative w-full mt-6 sm:mt-0 sm:w-[35%] md:w-[40%] flex items-center justify-center sm:mx-6">
-              <button
-                title="send email"
-                className="flex text-[.9rem] items-center justify-center border-2 border-orange bg-orange hover:bg-[#ffe5d4] hover:text-orange py-2 w-full sm:w-[8rem] text-white rounded-md"
-              >
-                Say hi!
-              </button>
-            </div>
-          </div>
-        </div>
+          </button>
+        </div> */}
       </div>
     </SectionLayout>
   );

@@ -1,6 +1,10 @@
-const Socials = () => {
+const Socials = ({ layout }: { layout: "col" | "row" }) => {
   return (
-    <aside className="inline-flex flex-col justify-end space-y-3">
+    <aside
+      className={`flex flex-${layout} ${
+        layout === "row" && "items-end space-x-3"
+      } justify-end space-y-3`}
+    >
       <button
         aria-label="visit linkedin page"
         className="w-5 h-5 fill-gray dark:fill-gray-alt hover:fill-orange hover:dark:fill-orange transition-colors duration-200 ease-out"

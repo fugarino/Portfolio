@@ -7,7 +7,7 @@ const TypewriterEffect = () => {
     <Typewriter
       onInit={(typewriter) => {
         typewriter
-          .typeString("Christian Fugraino")
+          .typeString("c. fugraino")
           .pauseFor(1000)
           .deleteChars(5)
           .typeString("arino")

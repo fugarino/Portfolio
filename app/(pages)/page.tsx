@@ -1,6 +1,8 @@
 "use client";
 
 import { Poppins } from "@next/font/google";
+import { ThemeProvider } from "next-themes";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import Hero from "../components/hero/Hero";
@@ -19,6 +21,7 @@ const customFont = Poppins({
 const HomePage = () => {
   const scrollRef = useRef<any>("");
   const { scrollTo, setScrollTo }: any = useScroll();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (scrollTo !== null) {
@@ -34,18 +37,25 @@ const HomePage = () => {
     }
   }, [scrollTo, setScrollTo]);
 
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body?.removeAttribute("style");
+  }, [pathname]);
+
   return (
-    <div
-      ref={scrollRef}
-      className={`${customFont.className} max-w-[1400px] py-1 mx-auto select-none overflow-x-hidden`}
-    >
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider attribute="class">
+      <div
+        ref={scrollRef}
+        className={`${customFont.className} max-w-[1400px] mx-auto py-1 sm:py-2 select-none overflow-x-hidden`}
+      >
+        <Navbar />
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

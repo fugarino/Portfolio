@@ -1,16 +1,25 @@
+"use client";
+
+import { useEffect } from "react";
 import PikachuContentWrapper from "../../components/projects/pikachu/PikachuContentWrapper";
 import styles from "../../components/ui/buttons/IndustrialTombBtn/ITombBtn.module.css";
 import ArrowLink from "../../components/ui/links/ArrowLink";
 
 const PikachuPage = () => {
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (!body) return;
+    body.style.backgroundColor = "#ffe62d";
+  }, []);
+
   return (
-    <div className="bg-project-3 min-h-screen overflow-x-hidden">
+    <div className="bg-[#ffe62d] min-h-screen overflow-x-hidden">
       <div className="max-w-[1320px] mx-auto px-6 lg:px-8 pt-4">
-        <ArrowLink linkURL="/" color="black" />
-        <header className="flex justify-between items-center mt-4 lg:mt-0 h-[clamp(12rem,40vw,30rem)] lg:h-[clamp(12.7rem,30vw,26rem)]">
-          <div className="w-[55%] h-full lg:w-[35%] flex flex-col justify-between">
+        <ArrowLink color="black" />
+        <header className="flex flex-col-reverse sm:flex-row justify-between items-center mt-4 lg:mt-0 sm:h-[clamp(12rem,40vw,30rem)] lg:h-[clamp(12.7rem,30vw,26rem)]">
+          <div className="w-full sm:w-[55%] h-full lg:w-[35%] flex flex-col justify-between">
             <div></div>
-            <p className="text-black lg:mb-4 font-medium text-[clamp(.9rem,3.1vw,1.2rem)] lg:text-[clamp(.9rem,2vw,1.5rem)] leading-[clamp(19px,2.5vw,25px)]">
+            <p className="text-black mt-6 sm:mt-0 lg:mb-4 font-semibold sm:font-medium text-[1.1rem] sm:text-[clamp(.9rem,3.1vw,1.2rem)] lg:text-[clamp(.9rem,2vw,1.5rem)] leading-[clamp(19px,2.5vw,25px)]">
               This &quot;drawing&quot;
               <br />
               was made entirely
@@ -28,8 +37,8 @@ const PikachuPage = () => {
               to make pikachu in html and css.
             </p>
           </div>
-          <div className="relative w-[45%] lg:w-[65%]">
-            <div className="absolute -left-[3.5rem] lg:-left-[4rem] -top-[2.5rem] lg:-top-[3rem] -rotate-[40deg] lg:-rotate-45">
+          <div className="relative w-[70%] sm:w-[45%] lg:w-[65%]">
+            <div className="absolute min-w-[4rem] -right-5 sm:right-auto -top-[4rem] sm:-left-[3.5rem] lg:-left-[4rem] sm:-top-[2.5rem] lg:-top-[3rem] rotate-[35deg] sm:-rotate-[40deg] lg:-rotate-45">
               <picture>
                 <img
                   src="/pokemon logo.svg"
@@ -43,13 +52,13 @@ const PikachuPage = () => {
                 <img
                   src="/PikachuOrange.png"
                   alt="pikachu"
-                  className="absolute top-0 left-0 right-0 bottom-0 lg:relative object-cover h-full rounded-full lg:rounded-[4rem] border-[3px] border-[#F2C444] p-1"
+                  className="absolute top-0 lg:relative h-full lg:h-auto object-cover rounded-full lg:rounded-[4rem] border-[3px] border-[#F2C444] p-1"
                 />
               </picture>
             </div>
           </div>
         </header>
-        <div className="w-full relative top-4 lg:w-[35%] flex justify-between space-x-4 mt-14 px-2">
+        <div className="w-full relative top-4 lg:w-[35%] flex justify-between space-x-4 mt-4 sm:mt-14 px-2">
           <button
             className={`${styles.pikachuBtn} bg-[#F2C444] w-1/2 py-3 border-[3px] border-[#435691] text-[#3a4b7f] hover:text-[#2c3a65] font-semibold active:-translate-x-[4px] active:translate-y-[4px]`}
           >
@@ -63,15 +72,15 @@ const PikachuPage = () => {
         </div>
 
         <PikachuContentWrapper>
-          <section className="mt-20">
+          <section className="mt-14 sm:mt-20">
             {/* 1 */}
             <article className="flex flex-col lg:flex-row w-full lg:space-x-4">
               <div className="h-[16rem] lg:h-[20rem] w-full lg:w-1/2">
-                <div className="pr-14 lg:mt-5">
-                  <h2 className="font-bold text-[#535353] text-[clamp(2.5rem,6vw,5rem)]">
+                <div className="sm:pr-14 lg:mt-5">
+                  <h2 className="font-bold text-[#2c2c2c] leading-[3rem] sm:leading-[5.5rem] text-[clamp(2.5rem,6vw,5rem)]">
                     Step 1
                   </h2>
-                  <p className="text-[#515151] font-[400] text-[clamp(.95rem,2vw,1.2rem)]">
+                  {/* <p className="text-[#515151] font-[400] text-[clamp(1rem,2vw,1.2rem)]">
                     Create a{" "}
                     <span className="font-[600] text-black">Clip-path</span> for
                     the tail and set the{" "}
@@ -80,6 +89,23 @@ const PikachuPage = () => {
                     </span>
                     . Next, fill in the tail with the corresponding colored
                     elements.
+                  </p> */}
+                  <p className="text-[#3c3c3c] font-[400] text-[clamp(1rem,2vw,1.1rem)]">
+                    In order to{" "}
+                    <span className="font-[600] text-black">
+                      create the tail
+                    </span>
+                    , apply a{" "}
+                    <span className="font-[600] text-black">clip-path</span> and
+                    set the{" "}
+                    <span className="font-[600] text-black">
+                      overflow to hidden
+                    </span>
+                    . Then, add multiple nested child elements to{" "}
+                    <span className="font-[600] text-black">
+                      fill in the colors
+                    </span>
+                    .
                   </p>
                 </div>
               </div>
@@ -92,7 +118,14 @@ const PikachuPage = () => {
                   />
                 </picture>
                 <div className="relative z-20 w-full h-[18rem] bg-[#F2C444] rounded-lg">
-                  <div className="absolute -top-[8.2rem] lg:-top-[10.7rem] right-[3rem] w-[10rem] lg:w-[13rem]">
+                  <picture>
+                    <img
+                      src="/PT.png"
+                      alt="pikachu"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </picture>
+                  <div className="absolute -top-[6.5rem] sm:-top-[8.2rem] lg:-top-[10.7rem] right-[3rem] w-[8rem] sm:w-[10rem] lg:w-[13rem]">
                     <picture>
                       <img src="/Ash.svg" alt="ash and friends" />
                     </picture>
@@ -101,7 +134,7 @@ const PikachuPage = () => {
               </div>
             </article>
             {/* 2 */}
-            <article className="flex flex-col-reverse lg:flex-row w-full mt-10 lg:space-x-4">
+            <article className="flex flex-col-reverse lg:flex-row w-full mt-12 lg:space-x-4">
               <div className="relative w-full lg:w-1/2">
                 <picture>
                   <img
@@ -110,14 +143,22 @@ const PikachuPage = () => {
                     className="flex w-[10rem] absolute z-10 -left-[6rem] lg:-left-[2.5rem] top-4 lg:-top-[6rem]"
                   />
                 </picture>
-                <div className="relative z-10 h-[18rem] bg-[#F2C444] rounded-lg"></div>
+                <div className="relative z-10 h-[18rem] bg-[#F2C444] rounded-lg">
+                  <picture>
+                    <img
+                      src="/P2.png"
+                      alt="pikachu"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </picture>
+                </div>
               </div>
-              <div className="h-[15rem] w-full lg:w-1/2">
-                <div className="pr-14 lg:pl-10">
-                  <h2 className="font-bold text-[#535353] text-[clamp(2.5rem,6vw,5rem)]">
+              <div className="h-[15rem] w-full lg:w-1/2 mb-10 sm:mb-6">
+                <div className="sm:pr-14 lg:pl-6 xl:pl-8 w-full flex flex-col justify-center h-full">
+                  <h2 className="font-bold text-[#2c2c2c] leading-[3rem] sm:leading-[5.5rem] text-[clamp(2.5rem,6vw,5rem)]">
                     Step 2
                   </h2>
-                  <p className="text-[#515151] font-[400] text-[clamp(.95rem,2vw,1.2rem)]">
+                  {/* <p className="text-[#3c3c3c] w-full font-[400] text-[clamp(1rem,2vw,1.2rem)]">
                     In order to{" "}
                     <span className="text-black font-[600]">
                       recreate the outline
@@ -133,18 +174,26 @@ const PikachuPage = () => {
                       to shape and position the elements
                     </span>
                     . Add a border to the child and voila.
+                  </p> */}
+                  <p className="text-[#3c3c3c] w-full font-[400] text-[clamp(1rem,2vw,1.1rem)]">
+                    To recreate a curved line, create a parent-child
+                    relationship between two elements. Use border radius,
+                    overflow hidden, and relative/absolute positioning to shape
+                    and position the elements. Finally, add a border to the
+                    child element and voilà. Once the outline is complete, block
+                    in the main colors and shadows.
                   </p>
                 </div>
               </div>
             </article>
             {/* 3 */}
-            <article className="flex flex-col lg:flex-row w-full mt-14 lg:space-x-4">
+            <article className="flex flex-col lg:flex-row w-full mt-14 lg:mt-20 lg:space-x-4">
               <div className="h-[14rem] w-full lg:w-1/2">
-                <div className="pr-14 lg:mt-3">
-                  <h2 className="font-bold text-[#535353] text-[clamp(2.5rem,6vw,5rem)]">
+                <div className="sm:pr-14 lg:mt-3">
+                  <h2 className="font-bold text-[#2c2c2c] leading-[3rem] text-[clamp(2.5rem,6vw,5rem)]">
                     Step 3
                   </h2>
-                  <p className="text-[#515151] font-[400] text-[clamp(.95rem,1.7vw,1.2rem)]">
+                  <p className="text-[#3c3c3c] font-[400] text-[clamp(1rem,1.7vw,1.1rem)]">
                     <span className="font-[600] text-black">
                       Block in the main colors
                     </span>{" "}
@@ -162,75 +211,33 @@ const PikachuPage = () => {
                 </div>
               </div>
               <div className="relative h-[18rem] bg-[#F2C444] rounded-lg w-full lg:w-1/2">
-                <picture>
+                {/* <picture>
                   <img
                     src="/PokemonBall.svg"
                     alt="pokemon ball"
-                    className="flex w-[10rem] rotate-[15deg] absolute z-10 -right-[6rem] -bottom-0"
+                    className="flex w-[10rem] rotate-[15deg] absolute z-10 -right-[8rem] -bottom-0"
+                  />
+                </picture> */}
+                <picture>
+                  <img
+                    src="/PF.png"
+                    alt="pikachu"
+                    className="h-full w-full object-cover rounded-lg"
                   />
                 </picture>
               </div>
             </article>
           </section>
         </PikachuContentWrapper>
-        <footer className="mt-14 flex justify-between space-x-4">
-          <div className="w-1/2 flex justify-center items-center">
+        <footer className="mt-[4.5rem] flex justify-between space-x-4">
+          <div className="w-full flex justify-center items-center">
             <picture>
-              <img src="/pikachu_ashketchum 2.svg" alt="ash" />
+              <img
+                src="/pikachu_ashketchum 2.svg"
+                alt="ash"
+                className="w-full"
+              />
             </picture>
-          </div>
-          <div className="w-1/2 flex items-center">
-            <div className="w-full">
-              <div className="text-[1.1rem] lg:text-[1.5rem] text-black font-semibold">
-                Technologies:
-              </div>
-              <div className="flex justify-center mt-4 space-x-2 w-full">
-                <svg viewBox="0 0 128 128" className="w-14 lg:w-20">
-                  <path
-                    fill="#E44D26"
-                    d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
-                  ></path>
-                  <path
-                    fill="#F16529"
-                    d="M64 116.8l36.378-10.086 8.559-95.878H64z"
-                  ></path>
-                  <path
-                    fill="#EBEBEB"
-                    d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
-                  ></path>
-                  <path
-                    fill="#fff"
-                    d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
-                  ></path>
-                </svg>
-                <svg viewBox="0 0 128 128" className="w-14 lg:w-20">
-                  <path
-                    fill="#1572B6"
-                    d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
-                  ></path>
-                  <path
-                    fill="#33A9DC"
-                    d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
-                  ></path>
-                  <path
-                    fill="#fff"
-                    d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
-                  ></path>
-                  <path
-                    fill="#EBEBEB"
-                    d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
-                  ></path>
-                  <path
-                    fill="#fff"
-                    d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
-                  ></path>
-                  <path
-                    fill="#EBEBEB"
-                    d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
           </div>
         </footer>
       </div>

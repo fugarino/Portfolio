@@ -1,7 +1,7 @@
 const ITFooter = () => {
   return (
     <footer className="flex items-center justify-between w-[calc(100%+6.5rem)] mt-10 overflow-hidden">
-      <div className="w-[35%]">
+      <div className="w-[35%] relative -top-[11px] sm:top-0">
         <h3
           className={`font-[500] text-white text-[clamp(1rem,2vw,1.5rem)] mb-2`}
         >
@@ -23,7 +23,7 @@ const ITFooter = () => {
           <span className={`mx-4 text-[#dedede] text-[clamp(0.5rem,3vw,2rem)]`}>
             +
           </span>
-          <div className="flex flex-col items-center relative top-2">
+          <div className="flex flex-col items-center relative top-1 -left-2">
             <span
               className={`text-white font-[500] text-[clamp(1rem,2vw,1.5rem)] leading-5`}
             >

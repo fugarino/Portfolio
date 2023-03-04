@@ -1,13 +1,19 @@
+"use client";
+
 import Link from "next/link";
 
 interface ILinkURL {
-  linkURL: string;
   color: string;
 }
 
-const ArrowLink = ({ linkURL, color }: ILinkURL) => {
+const ArrowLink = ({ color }: ILinkURL) => {
+  // const removeBackground = () => {
+  //   const body = document.querySelector("body");
+  //   body?.removeAttribute("style");
+  // };
+
   return (
-    <Link href={linkURL}>
+    <Link href="/">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

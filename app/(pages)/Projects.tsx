@@ -1,26 +1,17 @@
-import ProjectLayout from "../components/layouts/ProjectLayout";
 import SectionLayout from "../components/layouts/SectionLayout";
-import ITCard from "../components/projects/industrial-tomb/ITCard";
-import PikachuCard from "../components/projects/pikachu/PikachuCard";
-import ProjectsSlider from "../components/ui/sliders/ProjectsSlider";
+import ScrollSnap from "../components/projects/ScrollSnap";
 
 const Projects = () => {
   return (
-    <SectionLayout sectionName="Projects" id="projects">
-      <div className="hidden xl:flex xl:flex-col">
-        <ProjectLayout alt={true} backgroundColor="bg-project-1">
-          <div></div>
-        </ProjectLayout>
-        <ProjectLayout backgroundColor="bg-project-2">
-          <ITCard />
-        </ProjectLayout>
-        <ProjectLayout alt={true} backgroundColor="bg-project-3">
-          <PikachuCard />
-        </ProjectLayout>
-      </div>
-      <div className="xl:hidden flex items-center justify-center w-full my-2">
-        <ProjectsSlider />
-      </div>
+    <SectionLayout sectionName="Projects" id="projects" p="0rem" psm="0rem">
+      <ScrollSnap />
+      {/* <div className="h-[50rem] hidden xl:flex px-[1.7rem] space-x-4">
+        <article className="h-full bg-project-1 rounded-lg w-1/2"></article>
+        <div className="h-full w-1/2 flex flex-col space-y-4">
+          <article className="bg-project-2 rounded-lg h-1/2"></article>
+          <article className="bg-project-3 rounded-lg h-1/2"></article>
+        </div>
+      </div> */}
     </SectionLayout>
   );
 };

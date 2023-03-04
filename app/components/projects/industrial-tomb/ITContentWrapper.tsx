@@ -9,7 +9,12 @@ interface IWrapperProps {
 
 const ITContentWrapper = ({ children }: IWrapperProps) => {
   return (
-    <motion.main variants={footerVariants} initial="hidden" whileInView="show">
+    <motion.main
+      className="mt-4"
+      variants={footerVariants}
+      initial="hidden"
+      whileInView="show"
+    >
       {children}
     </motion.main>
   );

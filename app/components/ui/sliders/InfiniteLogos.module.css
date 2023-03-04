@@ -11,3 +11,20 @@
   animation: marquee 30s linear infinite;
   /* transform: translate(0, -50%); */
 }
+
+@media screen and (min-width: 800px) {
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -200%;
+    }
+  }
+
+  .animate {
+    width: 400%;
+    animation: marquee 40s linear infinite;
+    /* transform: translate(0, -50%); */
+  }
+}

@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeProvider } from "next-themes";
 import { ScrollProvider } from "../../contexts/ScrollContext";
 import "../../styles/globals.css";
 
@@ -13,9 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <ThemeProvider attribute="class">
-          <ScrollProvider>{children}</ScrollProvider>
-        </ThemeProvider>
+        <ScrollProvider>{children}</ScrollProvider>
       </body>
     </html>
   );
