@@ -112,3 +112,7 @@ a {
 .testt {
   transform: translateX(-0.1%);
 }
+
+.testtt {
+  transform: translateX(-10%);
+}

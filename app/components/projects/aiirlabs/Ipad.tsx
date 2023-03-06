@@ -9,7 +9,7 @@ const Ipad = () => {
   return (
     <div
       className="bg-[#E0D7C5] relative flex col-span-6 h-[20rem]
-	 justify-center rounded-lg cursor-pointer"
+	    justify-center rounded-lg cursor-pointer"
       onClick={() => {
         isVideoPlaying ? vidRef.current?.pause() : vidRef.current?.play();
         setIsVideoPlaying((prevState) => !prevState);
