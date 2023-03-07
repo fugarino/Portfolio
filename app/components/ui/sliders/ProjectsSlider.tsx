@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import ITSliderCard from "../../projects/industrial-tomb/ITSliderCard";
 import PikachuSliderCard from "../../projects/pikachu/PikachuSliderCard";
 import styles from "../sliders/ProjectsSlider.module.css";
 
@@ -41,9 +40,7 @@ const ProjectsSlider = () => {
             ${project !== "slider1" && "cursor-pointer"}
             `}
             onClick={() => setProject("slider1")}
-          >
-            <ITSliderCard />
-          </div>
+          ></div>
         </label>
 
         <label htmlFor="s2" id={styles["slide2"]}>
