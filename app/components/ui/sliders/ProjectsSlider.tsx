@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import PikachuSliderCard from "../../projects/pikachu/PikachuSliderCard";
 import styles from "../sliders/ProjectsSlider.module.css";
 
 const ProjectsSlider = () => {
@@ -49,9 +48,7 @@ const ProjectsSlider = () => {
               project !== "slider2" && "cursor-pointer"
             }`}
             onClick={() => setProject("slider2")}
-          >
-            <PikachuSliderCard />
-          </div>
+          ></div>
         </label>
 
         <label htmlFor="s3" id={styles["slide3"]}>
