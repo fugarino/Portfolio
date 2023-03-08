@@ -25,7 +25,7 @@ const ITDesktop = () => {
       </div>
       <div className="h-[20rem] col-span-5 rounded-lg bg-[#181a1c]">
         <p className="p-6 flex h-full items-end text-white font-bold text-[1.2rem]">
-          Industrial Tumb is a 2D Puzzle-Platformer game in which players must
+          Industrial Tomb is a 2D Puzzle-Platformer game in which players must
           use interactive objects to reach the glowing scarab. Upon completion,
           players will receive a star rating based on their time of completion.
         </p>

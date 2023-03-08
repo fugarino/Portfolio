@@ -82,7 +82,7 @@ const PikachuDesktop = () => {
         </picture>
       </div>
       <div className="h-[20rem] flex flex-col justify-between py-10 px-20 col-span-7 rounded-lg bg-[#ecc53a]">
-        <h2 className="font-semibold text-[1.2rem] text-[#00000095]">Step 2</h2>
+        <h2 className="font-semibold text-[1.2rem] text-[#00000095]">Step 3</h2>
         <p className="font-medium text-[1.1rem] text-black pb-4">
           Finally, add the finishing touches, such as the eyes and mouth, using
           the same techniques as in the previous steps. This entire process

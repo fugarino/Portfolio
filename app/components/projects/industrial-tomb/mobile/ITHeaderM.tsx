@@ -1,14 +1,14 @@
-const ITHeader = () => {
+const ITHeaderM = () => {
   return (
-    <header className="overflow-hidden h-[40.5rem] col-span-7 row-span-2 rounded-lg bg-[#181a1c] p-10">
-      <div className="relative mt-2">
+    <div className="h-auto px-4 sm:px-6 overflow-hidden rounded-lg bg-[#181a1c] mx-[1rem] sm:mx-[2rem] mt-4">
+      <div className="relative flex items-center my-8 mt-10 sm:mt-12">
         <h1>
           <svg
             width="892"
             height="191"
             viewBox="0 0 892 191"
             fill="none"
-            className="w-full"
+            className="w-full h-auto"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g filter="url(#filter0_d_1_14)">
@@ -56,19 +56,19 @@ const ITHeader = () => {
             </defs>
           </svg>
         </h1>
-        <h2 className="text-[1.2rem] absolute bottom-14 right-2 text-yellow">
-          A JavaScript Game
+        <h2 className="text-[1rem] sm:text-[1.2rem] absolute right-3 sm:right-2 text-yellow">
+          <span className="relative top-4">A JavaScript Game</span>
         </h2>
       </div>
-      <div className="relative w-full">
-        <div className="absolute h-full w-[70rem] top-14 -right-[11rem]">
+      <div className="w-full my-4 mb-8 sm:mb-12">
+        <div className="h-full w-[calc(100%*1.1)] relative -left-[5rem] sm:-left-[7rem] top-0">
           <picture>
             <img src="/Group14.svg" alt="ITimg" />
           </picture>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
-export default ITHeader;
+export default ITHeaderM;
