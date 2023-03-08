@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import PikachuDesktop from "../../components/projects/pikachu/desktop/PikachuDesktop";
+import PikachuMobile from "../../components/projects/pikachu/mobile/PikachuMobile";
 import ArrowLink from "../../components/ui/links/ArrowLink";
 
 const PikachuPage = () => {
@@ -18,6 +19,7 @@ const PikachuPage = () => {
           <ArrowLink color="black" />
         </div>
         <PikachuDesktop />
+        <PikachuMobile />
       </div>
     </div>
   );
