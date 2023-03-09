@@ -1,38 +1,33 @@
 import ITAboutM from "./ITAboutM";
 import ITHeaderM from "./ITHeaderM";
-import ITVideoM from "./ITVideoM";
+import ITVideoSection from "./ITVideoSection";
 
 const ITMobile = () => {
   return (
     <div className="xl:hidden">
       <ITHeaderM />
-      <ITAboutM />
-      <ITVideoM src="IndustrialTombVideo" />
-      <div className="h-auto sm:h-[20.5rem] rounded-lg bg-[#181a1c] p-4 mx-[1rem] sm:mx-[2rem] mt-4">
-        <p className="p-2 sm:p-4 md:p-10 flex h-full items-end text-white text-[0.9rem] sm:text-[1rem] md:font-semibold md:text-[1.1rem]">
-          The objective is to push the moveable boxes onto corresponding
+      <ITAboutM src="IndustrialTombVideo" />
+      <ITVideoSection
+        src="MY Movie"
+        paragraph="The objective is to push the moveable boxes onto corresponding
           pressure plates, and interact with levers to enable trap doors. After
           enabling the final lever, the scarab will become visible, and the
           player must reach it and interact with it. If the player makes a
           mistake, they can easily restart by jumping off the map. Upon solving
           the level, players will receive a star rating based on their
           completion time: 3 stars for under 5 minutes, 2 stars for under 10
-          minutes, and 1 star for simply finishing.
-        </p>
-      </div>
-      <ITVideoM src="My Movie1" />
-      <div className="h-auto sm:h-[20.5rem] rounded-lg bg-[#181a1c] p-4 mx-[1rem] sm:mx-[2rem] mt-4">
-        <p className="p-2 sm:p-4 md:p-10 flex h-full items-end text-white text-[0.9rem] sm:text-[1rem] md:font-semibold md:text-[1.1rem]">
-          For the majority of the game&apos;s visuals, including the character,
+          minutes, and 1 star for simply finishing."
+      />
+      <ITVideoSection
+        src="MY Movie1"
+        paragraph="For the majority of the game's visuals, including the character,
           a 16x16 tileset was used. The individual collections of tiles were
           positioned separately on an HTML canvas, with the game loop updating
           their positions on each iteration - except for the character -
           creating the illusion of movement and keeping the player centered at
           all times. As a result, the game offers a beautiful UI that adapts
-          well to all screen sizes.
-        </p>
-      </div>
-      <ITVideoM src="My Movie" />
+          well to all screen sizes."
+      />
       <div className="relative h-[15rem] sm:h-[20rem] rounded-lg bg-[#181a1c] overflow-hidden mx-[1rem] sm:mx-[2rem] mt-4">
         <div className="relative w-full">
           <div className="absolute h-full w-[40rem] sm:w-[60rem] -bottom-[2.2rem] left-[1.2rem]">

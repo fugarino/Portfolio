@@ -12,7 +12,7 @@ const ITVideoM = ({ src }: { src: string }) => {
         isVideoPlaying ? vidRef.current?.pause() : vidRef.current?.play();
         setIsVideoPlaying((prevState) => !prevState);
       }}
-      className="relative cursor-pointer h-[15rem] sm:h-[20rem] rounded-lg mx-[1rem] sm:mx-[2rem] mt-4"
+      className="relative cursor-pointer h-full sm:h-[20rem] rounded-lg"
     >
       <div className="absolute text-white z-10 top-6 left-6 sm:top-8 sm:left-8">
         {!isVideoPlaying ? (

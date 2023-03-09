@@ -1,14 +1,14 @@
 const ITHeaderM = () => {
   return (
     <div className="h-auto px-4 sm:px-6 overflow-hidden rounded-lg bg-[#181a1c] mx-[1rem] sm:mx-[2rem] mt-4">
-      <div className="relative flex items-center my-8 mt-10 sm:mt-12">
+      <div className="relative flex items-center my-14 mt-16">
         <h1>
           <svg
             width="892"
             height="191"
             viewBox="0 0 892 191"
             fill="none"
-            className="w-full h-auto"
+            className="w-full sm:w-full h-auto"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g filter="url(#filter0_d_1_14)">
@@ -25,9 +25,9 @@ const ITHeaderM = () => {
                 width="891.5"
                 height="190.75"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -60,7 +60,7 @@ const ITHeaderM = () => {
           <span className="relative top-4">A JavaScript Game</span>
         </h2>
       </div>
-      <div className="w-full my-4 mb-8 sm:mb-12">
+      <div className="w-full my-4 mb-10 sm:mb-12">
         <div className="h-full w-[calc(100%*1.1)] relative -left-[5rem] sm:-left-[7rem] top-0">
           <picture>
             <img src="/Group14.svg" alt="ITimg" />

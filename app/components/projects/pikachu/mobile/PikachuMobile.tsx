@@ -74,7 +74,7 @@ const PikachuMobile = () => {
             </h2>
             <p className="font-medium text-[0.95rem] sm:text-[1rem] md:text-[1.1rem] text-black pb-4">
               To recreate the outline, specifically the curved lines, use
-              collections of elements with a parent-child relationships. Set the
+              collections of elements with a parent-child relationship. Set the
               parent element to overflow-hidden and give it a border radius
               without any fill. The child element will only have a border, which
               will also be rounded and positioned near the parent&apos;s edge.
