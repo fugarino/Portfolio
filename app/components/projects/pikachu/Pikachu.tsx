@@ -60,7 +60,7 @@ const Pikachu = () => {
           </div>
           <div className="flex justify-between items-center text-[#00000088]">
             <div className="px-2 flex items-center space-x-3 relative top-[2px]">
-              <button>
+              <button className="hover:text-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -92,7 +92,7 @@ const Pikachu = () => {
                 </svg>
               </button>
             </div>
-            <button className="h-8 rounded-full px-2 flex items-end justify-center relative bottom-[2px]">
+            <button className="h-8 rounded-full px-2 flex items-end justify-center relative bottom-[2px] hover:text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

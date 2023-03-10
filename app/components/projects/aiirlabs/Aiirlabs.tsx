@@ -39,7 +39,7 @@ const Aiirlabs = () => {
               </div>
               <div className="hidden xl:flex w-[42%] xxl:w-[40%] justify-between text-[#00000088]">
                 <div className="pl-2 flex space-x-2">
-                  <button className="w-[24px] h-[24px]">
+                  <button className="w-[24px] h-[24px] hover:text-black">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -71,7 +71,7 @@ const Aiirlabs = () => {
                     </svg>
                   </button>
                 </div>
-                <button className="h-8 rounded-full pl-2 flex justify-center">
+                <button className="h-8 rounded-full pl-2 flex justify-center hover:text-black">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -122,7 +122,7 @@ const Aiirlabs = () => {
           </div>
           <div className="flex xl:hidden justify-between items-center text-[#00000088]">
             <div className="px-2 flex items-center space-x-3 relative top-[2px]">
-              <button>
+              <button className="hover:text-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -154,7 +154,7 @@ const Aiirlabs = () => {
                 </svg>
               </button>
             </div>
-            <button className="h-8 rounded-full px-2 flex items-end justify-center relative bottom-[2px]">
+            <button className="h-8 rounded-full px-2 flex items-end justify-center relative bottom-[2px] hover:text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

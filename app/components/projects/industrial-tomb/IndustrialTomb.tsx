@@ -86,7 +86,7 @@ const IndustrialTomb = () => {
           </div>
           <div className="flex justify-between items-center text-[#ffffff88]">
             <div className="px-2 flex items-center space-x-3 relative top-[2px]">
-              <button>
+              <button className="hover:text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -118,7 +118,7 @@ const IndustrialTomb = () => {
                 </svg>
               </button>
             </div>
-            <button className="h-8 rounded-full px-2 flex items-end justify-center relative bottom-[2px]">
+            <button className="h-8 hover:text-white rounded-full px-2 flex items-end justify-center relative bottom-[2px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

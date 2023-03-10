@@ -78,7 +78,7 @@ const AiirlabsShowcase = () => {
       <ul
         ref={carousel}
         onScroll={handleBtns}
-        className="flex h-full overflow-x-auto relative top-[15px] space-x-2 snap-x snap-mandatory"
+        className="flex h-full overflow-x-auto text-black relative top-[15px] space-x-2 snap-x snap-mandatory"
       >
         <li className="relative flex justify-center bg-[#D9D9D9] overflow-hidden w-[250px] h-full rounded-t-lg shrink-0 snap-start snap-always">
           <h3 className="mt-3 text-[1.2rem] font-semibold">authentication</h3>
