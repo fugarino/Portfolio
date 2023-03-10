@@ -92,23 +92,26 @@ const Pikachu = () => {
                 </svg>
               </button>
             </div>
-            <button className="h-8 rounded-full px-2 flex items-end justify-center relative bottom-[2px] hover:text-black">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 relative top-[2px]"
+            <button className="h-8 relative rounded-full px-2 hover:text-black">
+              <Link
+                href="/pikachu"
+                className="text-[0.8rem] ml-2 space-x-2 mr-w font-bold flex justify-center"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
-              <Link href="/pikachu" className="text-[0.8rem] ml-2 font-bold">
-                FULL PAGE
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+                <span className="relative top-[3px]">FULL PAGE</span>
               </Link>
             </button>
           </div>
