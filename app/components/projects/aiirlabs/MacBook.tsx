@@ -31,15 +31,15 @@ const MacBook = () => {
           <img src="/MacBook1.png" alt="macbook" className="h-[19.5rem]" />
         </picture>
       </div>
-      <div className="absolute top-[17px] w-[26rem] h-[16.6rem]">
+      <div className="absolute overflow-hidden rounded-[.5rem] top-[17px] w-[26rem] h-[16.6rem]">
         <video
           muted
           loop
           playsInline
           ref={vidRef}
-          className="w-full h-full object-cover object-top top-0 rounded-[.5rem]"
+          className="w-full h-full scale-[112%] object-cover object-top relative top-4 rounded-[.5rem]"
         >
-          <source src="/aiir.mp4" type="video/mp4" />
+          <source src="/My Movie99.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

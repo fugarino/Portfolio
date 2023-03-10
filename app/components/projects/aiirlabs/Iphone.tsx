@@ -43,7 +43,7 @@ const Iphone = () => {
           ref={vidRef}
           className="w-full h-full object-cover object-top top-0 rounded-[2rem]"
         >
-          <source src="/aiir.mp4" type="video/mp4" />
+          <source src="/My Movie8.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

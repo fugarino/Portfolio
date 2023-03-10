@@ -31,15 +31,15 @@ const Ipad = () => {
           <img src="/iPad Pro 2019.png" alt="ipad" className="h-[19rem]" />
         </picture>
       </div>
-      <div className="absolute top-[20px] w-[23.25rem] h-[17.5rem]">
+      <div className="absolute overflow-hidden rounded-[.5rem] top-[20px] w-[23.25rem] h-[17.5rem]">
         <video
           muted
           loop
           playsInline
           ref={vidRef}
-          className="w-full h-full object-cover object-top top-0 rounded-[.5rem]"
+          className="w-full h-full scale-[135%] object-cover object-top relative top-[3rem] rounded-[.5rem]"
         >
-          <source src="/aiir.mp4" type="video/mp4" />
+          <source src="/My Movie14.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

@@ -3,7 +3,7 @@ const AiirlabsPromo1 = () => {
     <div className="col-span-5 h-[20rem]">
       <picture>
         <img
-          src="/iPhone XS.png"
+          src="/Frame 3.png"
           alt="iphones"
           className="w-full h-full object-cover rounded-lg"
         />

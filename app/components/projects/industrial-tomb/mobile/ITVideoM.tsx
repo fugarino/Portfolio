@@ -2,15 +2,25 @@
 
 import { useRef, useState } from "react";
 
-const ITVideoM = ({ src }: { src: string }) => {
+const ITVideoM = ({
+  src,
+  isCarouselLeft,
+  alt,
+}: {
+  src: string;
+  isCarouselLeft: boolean;
+  alt?: boolean;
+}) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const vidRef = useRef<HTMLVideoElement | null>(null);
 
   return (
     <div
       onClick={() => {
-        isVideoPlaying ? vidRef.current?.pause() : vidRef.current?.play();
-        setIsVideoPlaying((prevState) => !prevState);
+        if ((isCarouselLeft && !alt) || (alt && !isCarouselLeft)) {
+          isVideoPlaying ? vidRef.current?.pause() : vidRef.current?.play();
+          setIsVideoPlaying((prevState) => !prevState);
+        }
       }}
       className="relative cursor-pointer h-full sm:h-[20rem] rounded-lg"
     >

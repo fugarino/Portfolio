@@ -91,7 +91,12 @@ const AiirlabsShowcase = () => {
               />
             </picture>
           </div>
-          <div className="absolute w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]"></div>
+          <div className="absolute overflow-hidden w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]">
+            <picture>
+              <img src="auth-e.png" alt="current events" />
+            </picture>
+          </div>
+          {/* <div className="absolute top-[3.6rem] bg-black w-12 h-4 rounded-full"></div> */}
         </li>
         <li className="relative flex justify-center bg-[#D9D9D9] overflow-hidden w-[250px] h-full rounded-t-lg shrink-0 snap-center snap-always">
           <h3 className="mt-3 text-[1.2rem] font-semibold">current events</h3>
@@ -104,7 +109,11 @@ const AiirlabsShowcase = () => {
               />
             </picture>
           </div>
-          <div className="absolute w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]"></div>
+          <div className="absolute overflow-hidden w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]">
+            <picture>
+              <img src="current-eve.png" alt="current events" />
+            </picture>
+          </div>
         </li>
         <li className="relative flex justify-center bg-[#D9D9D9] overflow-hidden w-[250px] h-full rounded-t-lg shrink-0 snap-center snap-always">
           <h3 className="mt-3 text-[1.2rem] font-semibold">
@@ -119,7 +128,11 @@ const AiirlabsShowcase = () => {
               />
             </picture>
           </div>
-          <div className="absolute w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]"></div>
+          <div className="absolute overflow-hidden w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]">
+            <picture>
+              <img src="chart-prev.png" alt="current events" />
+            </picture>
+          </div>
         </li>
         <li className="relative flex justify-center bg-[#D9D9D9] overflow-hidden w-[250px] h-full rounded-t-lg shrink-0 snap-center snap-always">
           <h3 className="mt-3 text-[1.2rem] font-semibold">comments</h3>
@@ -132,7 +145,11 @@ const AiirlabsShowcase = () => {
               />
             </picture>
           </div>
-          <div className="absolute w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]"></div>
+          <div className="absolute overflow-hidden w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]">
+            <picture>
+              <img src="comments-e.png" alt="current events" />
+            </picture>
+          </div>
         </li>
         <li className="relative flex justify-center bg-[#D9D9D9] overflow-hidden w-[250px] h-full rounded-t-lg shrink-0 snap-center snap-always">
           <h3 className="mt-3 text-[1.2rem] font-semibold">notifications</h3>
@@ -145,7 +162,11 @@ const AiirlabsShowcase = () => {
               />
             </picture>
           </div>
-          <div className="absolute w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]"></div>
+          <div className="absolute overflow-hidden w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]">
+            <picture>
+              <img src="noti-e.png" alt="current events" />
+            </picture>
+          </div>
         </li>
       </ul>
     </div>
