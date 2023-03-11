@@ -15,9 +15,7 @@ const IndustrialTombPage = () => {
   return (
     <div className="bg-[#292c2f] min-h-screen overflow-x-hidden">
       <div className="max-w-[1320px] mx-auto">
-        <div className="px-[1rem] sm:px-[2rem] mt-4">
-          <ArrowLink color="white" />
-        </div>
+        <ArrowLink color="white" />
         <ITDesktop />
         <ITMobile />
       </div>
