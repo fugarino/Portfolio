@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import ITVideoM from "./ITVideoM";
 
-const ITAboutM = ({ src, alt }: { src: string; alt: boolean }) => {
+const ITAboutM = ({ src, alt }: { src: string; alt?: boolean }) => {
   const [isCarouselLeft, setIsCarouselLeft] = useState(true);
   const carousel = useRef<HTMLDivElement>(null);
 
