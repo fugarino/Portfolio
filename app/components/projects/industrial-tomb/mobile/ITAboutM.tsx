@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import ITVideoM from "./ITVideoM";
 
-const ITAboutM = ({ src }: { src: string }) => {
+const ITAboutM = ({ src, alt }: { src: string; alt: boolean }) => {
   const [isCarouselLeft, setIsCarouselLeft] = useState(true);
   const carousel = useRef<HTMLDivElement>(null);
 
@@ -27,7 +27,9 @@ const ITAboutM = ({ src }: { src: string }) => {
       <div
         onScroll={handleBtns}
         ref={carousel}
-        className="flex px-[1rem] sm:px-[2rem] mt-4 space-x-4 pb-10 overflow-x-auto snap-x snap-mandatory"
+        className={`flex ${
+          alt && "flex-row-reverse"
+        } px-[1rem] sm:px-[2rem] mt-4 space-x-4 pb-10 overflow-x-auto snap-x snap-mandatory`}
       >
         <div
           onClick={handlePrevClick}

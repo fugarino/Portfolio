@@ -1,14 +1,14 @@
 import ITAboutM from "./ITAboutM";
 import ITCallToAction from "./ITCallToAction";
 import ITHeaderM from "./ITHeaderM";
-import ITVideoSection from "./ITVideoSection";
 
 const ITMobile = () => {
   return (
     <div className="xl:hidden">
       <ITHeaderM />
       <ITAboutM src="IndustrialTombVideo" />
-      <ITVideoSection
+      <ITAboutM src="IndustrialTombVideo" alt={true} />
+      {/* <ITVideoSection
         src="MY Movie"
         paragraph="The objective is to push the moveable boxes onto corresponding
           pressure plates, and interact with levers to enable trap doors. After
@@ -18,7 +18,7 @@ const ITMobile = () => {
           the level, players will receive a star rating based on their
           completion time: 3 stars for under 5 minutes, 2 stars for under 10
           minutes, and 1 star for simply finishing."
-      />
+      /> */}
       {/* <ITVideoSection
         src="MY Movie1"
         paragraph="For the majority of the game's visuals, including the character,
