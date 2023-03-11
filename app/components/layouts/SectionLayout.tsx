@@ -8,7 +8,11 @@ interface ISectionLayoutProps {
   psm: string;
 }
 
-const customFont = Kalam({ display: "swap", weight: ["300", "400", "700"] });
+const customFont = Kalam({
+  display: "swap",
+  weight: ["300", "400", "700"],
+  preload: false,
+});
 
 const SectionLayout = ({
   sectionName,
