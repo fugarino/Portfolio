@@ -1,6 +1,11 @@
 import { createContext, useContext, useState } from "react";
 
-const ScrollContext = createContext({});
+interface IScrollContext {
+  scrollTo: string | null;
+  setScrollTo: React.Dispatch<React.SetStateAction<null>>;
+}
+
+const ScrollContext = createContext({} as IScrollContext);
 
 export const useScroll = () => {
   return useContext(ScrollContext);

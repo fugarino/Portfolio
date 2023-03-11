@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProjectsBtns from "../ProjectsBtns";
 
 const Pikachu = () => {
   return (
@@ -58,7 +59,8 @@ const Pikachu = () => {
               </span>
             </p>
           </div>
-          <div className="flex justify-between items-center text-[#00000088]">
+          <ProjectsBtns href="/pikachu" color="#00000088" hoverColor="black" />
+          {/* <div className="flex justify-between items-center text-[#00000088]">
             <div className="px-2 flex items-center space-x-3 relative top-[2px]">
               <button className="hover:text-black">
                 <svg
@@ -114,7 +116,7 @@ const Pikachu = () => {
                 <span className="relative top-[3px]">FULL PAGE</span>
               </Link>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </li>

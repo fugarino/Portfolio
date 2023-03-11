@@ -17,7 +17,7 @@ const scrollToSlide = (
   });
 };
 
-const ScrollSnap = () => {
+const ProjectsLayout = () => {
   const [sliderPosition, setSliderPosition] = useState(0);
   const sliderRef = useRef<HTMLUListElement | null>(null);
 
@@ -34,9 +34,8 @@ const ScrollSnap = () => {
   }, [currentSlide]);
 
   return (
-    <div className="relative h-[24.3rem] sm:h-[30rem] xl:h-[70.5rem] overflow-hidden py-4">
-      {/* scroll buttons */}
-      <div className="absolute right-[3.2rem] top-0 hidden sm:flex xl:hidden">
+    <main className="relative h-[24.3rem] sm:h-[30rem] xl:h-[70.5rem] overflow-hidden py-4">
+      <aside className="absolute right-[3.2rem] top-0 hidden sm:flex xl:hidden">
         <button
           className="disabled:text-gray border-[2px] rounded-full w-[22px] h-[22px] mr-2 flex items-center justify-center"
           disabled={currentSlide === 0}
@@ -77,9 +76,7 @@ const ScrollSnap = () => {
             />
           </svg>
         </button>
-      </div>
-      {/* scroll buttons */}
-
+      </aside>
       {/* Projects */}
       <ul
         ref={sliderRef}
@@ -88,23 +85,13 @@ const ScrollSnap = () => {
         }}
         className="flex xl:flex-col mt-5 pb-12 overflow-x-auto xl:overflow-hidden snap-x snap-mandatory xl:px-[1.7rem] xl:space-y-4"
       >
-        {/* Project 1 */}
         <Aiirlabs />
-        {/* Project 1 */}
-
-        {/* Project 2 */}
         <IndustrialTomb />
-        {/* Project 2 */}
-
-        {/* Project 3 */}
         <Pikachu />
-        {/* Project 3 */}
-
         <li className="bg-opacity-0 snap-none h-[20rem] xl:h-[21rem] w-[1rem] rounded-lg shrink-0"></li>
       </ul>
-      {/* Projects */}
-    </div>
+    </main>
   );
 };
 
-export default ScrollSnap;
+export default ProjectsLayout;

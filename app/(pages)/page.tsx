@@ -19,13 +19,13 @@ const customFont = Poppins({
 });
 
 const HomePage = () => {
-  const scrollRef = useRef<any>("");
-  const { scrollTo, setScrollTo }: any = useScroll();
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const { scrollTo, setScrollTo } = useScroll();
   const pathname = usePathname();
 
   useEffect(() => {
     if (scrollTo !== null) {
-      const children = scrollRef.current.children;
+      const children = scrollRef.current!.children;
       for (let i = 0; i < children.length; i++) {
         if (children[i].id === scrollTo?.toLowerCase()) {
           children[i].scrollIntoView({

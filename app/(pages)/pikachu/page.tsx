@@ -13,11 +13,9 @@ const PikachuPage = () => {
   }, []);
 
   return (
-    <div className="bg-[#ffe62d] min-h-screen overflow-x-hidden">
+    <div className="bg-[#ffe62d] text-black min-h-screen overflow-x-hidden">
       <div className="max-w-[1320px] mx-auto">
-        <div className="px-[1rem] sm:px-[2rem] mt-4">
-          <ArrowLink color="black" />
-        </div>
+        <ArrowLink color="black" />
         <PikachuDesktop />
         <PikachuMobile />
       </div>

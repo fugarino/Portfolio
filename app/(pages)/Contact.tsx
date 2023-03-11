@@ -144,63 +144,6 @@ const Contact = () => {
             <li className="md:hidden bg-opacity-0 snap-none h-[20rem] sm:h-[12rem] w-[1rem] rounded-lg shrink-0"></li>
           </ul>
         </div>
-        {/* <div className="relative max-w-[1200px] mx-auto my-12 w-full px-2 sm:px-0 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
-          <button className="bg-[#BED4BE] w-full text-black h-[11rem] sm:h-[12rem] flex flex-col justify-between p-6 rounded-lg">
-            <h3 className="font-bold text-[1.8rem] sm:text-[2.5rem]">
-              Get in touch
-            </h3>
-            <div className="flex w-full items-end justify-between">
-              <p className="font-[300] text-left text-[0.95rem] sm:text-[1rem] leading-5">
-                Have any questions?
-                <br />
-                Feel free to send me an email.
-              </p>
-              <aside>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-7 h-7"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </aside>
-            </div>
-          </button>
-          <button className="bg-[#efe0c8] p-6 w-full sm:w-[40%] md:w-[35%] h-[11rem] sm:h-[12rem] rounded-lg">
-            <div className="w-full h-full text-left flex flex-col justify-between">
-              <div className="flex justify-between">
-                <div></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-8 h-8 text-black"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 13.5l3 3m0 0l3-3m-3 3v-6m1.06-4.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
-                  />
-                </svg>
-              </div>
-              <div className="text-black space-x-2">
-                <span className="font-[300] text-[0.95rem] sm:text-[1rem]">
-                  Download
-                </span>
-                <span className="font-bold text-[2.5rem] leading-5">CV</span>
-              </div>
-            </div>
-          </button>
-        </div> */}
       </div>
     </SectionLayout>
   );
