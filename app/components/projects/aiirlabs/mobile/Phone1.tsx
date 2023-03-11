@@ -70,7 +70,7 @@ const Phone1 = ({
               />
             </picture>
           </div>
-          <div className="absolute overflow-hidden rounded-[1.8rem] top-[35px] sm:top-[25px] w-[12rem] h-[25.8rem] sm:h-[26rem]">
+          <div className="absolute bg-[#EDEBEB] overflow-hidden rounded-[1.8rem] top-[35px] sm:top-[25px] w-[12rem] h-[25.8rem] sm:h-[26rem]">
             <video
               muted
               loop

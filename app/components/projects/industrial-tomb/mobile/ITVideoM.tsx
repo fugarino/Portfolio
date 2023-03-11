@@ -22,7 +22,7 @@ const ITVideoM = ({
           setIsVideoPlaying((prevState) => !prevState);
         }
       }}
-      className="relative cursor-pointer h-full sm:h-[20rem] rounded-lg"
+      className="relative bg-[#121314] cursor-pointer h-full sm:h-[20rem] rounded-lg"
     >
       <div className="absolute text-white z-10 top-6 left-6 sm:top-8 sm:left-8">
         {!isVideoPlaying ? (

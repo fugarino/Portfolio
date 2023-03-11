@@ -35,7 +35,7 @@ const Iphone = () => {
           />
         </picture>
       </div>
-      <div className="absolute top-[29px] w-[17rem] rounded-[2rem] h-[36.6rem]">
+      <div className="absolute top-[29px] bg-[#EDEBEB] w-[17rem] rounded-[2rem] h-[36.6rem]">
         <video
           muted
           loop

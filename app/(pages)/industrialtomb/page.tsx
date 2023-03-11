@@ -18,7 +18,6 @@ const IndustrialTombPage = () => {
         <ArrowLink color="white" />
         <ITDesktop />
         <ITMobile />
-        industrial tomb page
       </div>
     </div>
   );

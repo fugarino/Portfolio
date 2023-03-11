@@ -11,7 +11,7 @@ const ITVideo2 = () => {
         isVideoPlaying ? vidRef.current?.pause() : vidRef.current?.play();
         setIsVideoPlaying((prevState) => !prevState);
       }}
-      className="relative cursor-pointer h-[40.5rem] col-span-6 row-span-2 rounded-lg"
+      className="relative bg-[#121314] cursor-pointer h-[40.5rem] col-span-6 row-span-2 rounded-lg"
     >
       <div className="absolute text-white z-10 xl:top-2 xl:left-2 xxl:top-8 xxl:left-8">
         {!isVideoPlaying ? (

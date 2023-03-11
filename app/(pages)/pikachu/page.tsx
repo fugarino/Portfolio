@@ -18,7 +18,6 @@ const PikachuPage = () => {
         <ArrowLink color="black" />
         <PikachuDesktop />
         <PikachuMobile />
-        pikachu page
       </div>
     </div>
   );

@@ -17,7 +17,6 @@ const AiirlabsPage = () => {
       <ArrowLink color="black" />
       <AiirlabsDesktop />
       <AiirlabsMobile />
-      <div>aiirlabs page</div>
     </div>
   );
 };

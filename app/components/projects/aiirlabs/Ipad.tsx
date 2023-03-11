@@ -31,7 +31,7 @@ const Ipad = () => {
           <img src="/iPad Pro 2019.png" alt="ipad" className="h-[19rem]" />
         </picture>
       </div>
-      <div className="absolute overflow-hidden rounded-[.5rem] top-[20px] w-[23.25rem] h-[17.5rem]">
+      <div className="absolute bg-[#EDEBEB] overflow-hidden rounded-[.5rem] top-[20px] w-[23.25rem] h-[17.5rem]">
         <video
           muted
           loop

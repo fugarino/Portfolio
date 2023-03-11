@@ -31,7 +31,7 @@ const MacBook = () => {
           <img src="/MacBook1.png" alt="macbook" className="h-[19.5rem]" />
         </picture>
       </div>
-      <div className="absolute overflow-hidden rounded-[.5rem] top-[17px] w-[26rem] h-[16.6rem]">
+      <div className="absolute bg-[#EDEBEB] overflow-hidden rounded-[.5rem] top-[17px] w-[26rem] h-[16.6rem]">
         <video
           muted
           loop
