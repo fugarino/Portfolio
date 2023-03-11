@@ -32,7 +32,7 @@ const AiirlabsShowcase = () => {
   };
 
   return (
-    <div className="h-full relative">
+    <div className="h-full hidden xl:block relative">
       <div className="absolute right-0 -top-4 hidden xl:flex">
         <button
           onClick={handlePrevClick}

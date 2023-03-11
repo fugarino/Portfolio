@@ -13,14 +13,10 @@ const AiirlabsPage = () => {
   }, []);
 
   return (
-    <div className="bg-[#E9E2DB] min-h-screen overflow-x-hidden">
-      <div className="max-w-[1320px] mx-auto">
-        <div className="px-[1rem] sm:px-[2rem] mt-4">
-          <ArrowLink color="black" />
-        </div>
-        <AiirlabsDesktop />
-        <AiirlabsMobile />
-      </div>
+    <div className="bg-[#E9E2DB] max-w-[1320px] mx-auto text-black min-h-screen overflow-x-hidden">
+      <ArrowLink color="black" />
+      <AiirlabsDesktop />
+      <AiirlabsMobile />
     </div>
   );
 };

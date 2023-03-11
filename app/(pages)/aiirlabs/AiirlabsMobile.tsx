@@ -1,3 +1,4 @@
+import AiirlabsCallToAction from "../../components/projects/aiirlabs/mobile/AiirlabsCallToAction";
 import AiirlabsHeaderM from "../../components/projects/aiirlabs/mobile/AiirlabsHeaderM";
 import Phone1 from "../../components/projects/aiirlabs/mobile/Phone1";
 
@@ -53,12 +54,7 @@ const AiirlabsMobile = () => {
           />
         </picture>
       </div>
-      <div className="mt-4 mb-4 sm:mb-8 h-[16rem] sm:h-[14.5rem] overflow-hidden">
-        <section className="h-[17.5rem] pb-10 px-[1rem] sm:px-[2rem] flex space-x-4 overflow-x-auto snap-x snap-mandatory">
-          <div className="bg-[#DCCCBE] w-[calc(100%-2rem)] shrink-0 snap-center snap-always rounded-lg"></div>
-          <div className="bg-[#DCCCBE] w-[calc(100%-2rem)] shrink-0 snap-center snap-always rounded-lg"></div>
-        </section>
-      </div>
+      <AiirlabsCallToAction />
     </div>
   );
 };
