@@ -59,7 +59,13 @@ const Pikachu = () => {
               </span>
             </p>
           </div>
-          <ProjectsBtns href="/pikachu" color="#00000088" hoverColor="black" />
+          <ProjectsBtns
+            siteLink="pikachu-ten.vercel.app"
+            githubLink="https://github.com/fugarino/pikachu"
+            href="/pikachu"
+            color="#00000088"
+            hoverColor="black"
+          />
           {/* <div className="flex justify-between items-center text-[#00000088]">
             <div className="px-2 flex items-center space-x-3 relative top-[2px]">
               <button className="hover:text-black">

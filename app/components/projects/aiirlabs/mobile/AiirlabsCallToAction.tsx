@@ -16,7 +16,7 @@ const AiirlabsCallToAction = () => {
 
   const handlePrevClick = () => {
     if (isCarouselLeft) {
-      console.log("link to drawing");
+      return false;
     } else {
       carousel.current?.scrollBy({ left: -250, behavior: "smooth" });
     }
@@ -37,7 +37,11 @@ const AiirlabsCallToAction = () => {
         ref={carousel}
         className="h-[17.5rem] pb-10 px-[1rem] sm:px-[2rem] flex space-x-4 overflow-x-auto snap-x snap-mandatory"
       >
-        <div
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={isCarouselLeft ? "https://aiirlabs.com/" : undefined}
+          aria-label="aiirlabs"
           onClick={handlePrevClick}
           className="bg-[#DCCCBE] max-w-[463px] cursor-pointer w-[calc(100%-2rem)] shrink-0 snap-center snap-always rounded-lg"
         >
@@ -51,8 +55,14 @@ const AiirlabsCallToAction = () => {
               />
             </picture>
           </div>
-        </div>
-        <div
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={
+            !isCarouselLeft ? "https://github.com/fugarino/crypto" : undefined
+          }
+          aria-label="github"
           onClick={handleNextClick}
           className="bg-[#DCCCBE] max-w-[463px] overflow-hidden cursor-pointer w-[calc(100%-2rem)] shrink-0 snap-center snap-always rounded-lg"
         >
@@ -66,7 +76,7 @@ const AiirlabsCallToAction = () => {
               />
             </picture>
           </div>
-        </div>
+        </a>
       </section>
     </div>
   );

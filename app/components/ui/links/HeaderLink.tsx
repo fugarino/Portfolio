@@ -7,6 +7,8 @@ const HeaderLink = ({ text, linkURL }: IHeaderLinkProps) => {
   return (
     <a
       href={linkURL}
+      target="_blank"
+      rel="noreferrer"
       className="font-[0.8rem] cursor-pointer transition-colors duration-100 ease-out
       text-gray-dark hover:text-black dark:text-gray-light dark:hover:text-white"
     >

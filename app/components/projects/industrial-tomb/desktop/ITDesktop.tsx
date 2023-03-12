@@ -73,7 +73,13 @@ const ITDesktop = () => {
           </picture>
         </div>
       )}
-      <div className="bg-[#181a1c] text-white col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://industrial-game.vercel.app/"
+        aria-label="live-site"
+        className="bg-[#181a1c] text-white col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end"
+      >
         <div className="flex items-center justify-between relative top-1">
           <h3 className="text-[1.5rem] font-bold">play game</h3>
           <svg
@@ -91,8 +97,14 @@ const ITDesktop = () => {
             />
           </svg>
         </div>
-      </div>
-      <div className="bg-[#181a1c] text-white col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end">
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/fugarino/Industrial-Game"
+        aria-label="Github"
+        className="bg-[#181a1c] text-white col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end"
+      >
         <div className="flex items-center justify-between relative top-1">
           <h3 className="text-[1.5rem] font-bold">source code</h3>
           <svg
@@ -110,7 +122,7 @@ const ITDesktop = () => {
             />
           </svg>
         </div>
-      </div>
+      </a>
       <div className="relative h-[20rem] col-span-6 rounded-lg bg-[#181a1c] overflow-hidden">
         <div className="relative w-full">
           <div className="absolute h-full w-[60rem] -bottom-[2.2rem] -right-[30rem]">

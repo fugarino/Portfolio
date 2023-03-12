@@ -37,7 +37,11 @@ const PikachuCallToAction = () => {
         ref={carousel}
         className="px-[1rem] sm:px-[2rem] pb-10 flex space-x-4 overflow-x-auto snap-x snap-mandatory"
       >
-        <div
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={isCarouselLeft ? "https://pikachu-ten.vercel.app/" : undefined}
+          aria-label="live-site"
           onClick={handlePrevClick}
           className="h-[15rem] cursor-pointer text-black w-[calc(100%-3rem)] sm:w-[calc(100%-5rem)] max-w-[463px] rounded-lg bg-[#ecc53a] shrink-0 snap-center snap-always"
         >
@@ -51,8 +55,14 @@ const PikachuCallToAction = () => {
               />
             </picture>
           </div>
-        </div>
-        <div
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={
+            !isCarouselLeft ? "https://github.com/fugarino/pikachu" : undefined
+          }
+          aria-label="Github"
           onClick={handleNextClick}
           className="cursor-pointer h-[15rem] text-black w-[calc(100%-3rem)] sm:w-[calc(100%-5rem)] max-w-[463px] rounded-lg bg-[#ecc53a] shrink-0 snap-center snap-always"
         >
@@ -66,7 +76,7 @@ const PikachuCallToAction = () => {
               />
             </picture>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

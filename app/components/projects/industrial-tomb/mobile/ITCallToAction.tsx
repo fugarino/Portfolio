@@ -37,8 +37,14 @@ const ITCallToAction = () => {
         onScroll={handleBtns}
         className="px-[1rem] sm:px-[2rem] pb-10 flex space-x-4 overflow-x-auto snap-x snap-mandatory"
       >
-        <div
+        <a
           onClick={handlePrevClick}
+          target="_blank"
+          rel="noreferrer"
+          href={
+            isCarouselLeft ? "https://industrial-game.vercel.app/" : undefined
+          }
+          aria-label="live-site"
           className="cursor-pointer h-[15rem] text-white w-[calc(100%-3rem)] sm:w-[calc(100%-5rem)] max-w-[463px] rounded-lg bg-[#181a1c] shrink-0 snap-center snap-always"
         >
           <div className="flex items-end p-6 justify-between h-full relative top-1">
@@ -58,9 +64,17 @@ const ITCallToAction = () => {
               />
             </svg>
           </div>
-        </div>
-        <div
+        </a>
+        <a
           onClick={handleNextClick}
+          target="_blank"
+          rel="noreferrer"
+          href={
+            !isCarouselLeft
+              ? "https://github.com/fugarino/Industrial-Game"
+              : undefined
+          }
+          aria-label="Github"
           className="cursor-pointer h-[15rem] text-white w-[calc(100%-3rem)] sm:w-[calc(100%-5rem)] max-w-[463px] rounded-lg bg-[#181a1c] shrink-0 snap-center snap-always"
         >
           <div className="flex items-end p-6 justify-between h-full relative top-1">
@@ -80,7 +94,7 @@ const ITCallToAction = () => {
               />
             </svg>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

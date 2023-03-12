@@ -59,7 +59,13 @@ const AiirlabsDesktop = () => {
           notified of the response.
         </p>
       </div>
-      <div className="bg-[#DCCCBE] col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://aiirlabs.com/"
+        aria-label="aiirlabs"
+        className="bg-[#DCCCBE] cursor-pointer col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end"
+      >
         <div className="flex items-center justify-between relative top-4">
           <h3 className="text-[1.5rem] font-bold">aiirlabs.com</h3>
           <picture>
@@ -70,8 +76,14 @@ const AiirlabsDesktop = () => {
             />
           </picture>
         </div>
-      </div>
-      <div className="bg-[#DCCCBE] col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end">
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/fugarino/crypto"
+        aria-label="github"
+        className="bg-[#DCCCBE] cursor-pointer col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end"
+      >
         <div className="flex items-center justify-between relative top-4">
           <h3 className="text-[1.5rem] font-bold">source code</h3>
           <picture>
@@ -82,7 +94,7 @@ const AiirlabsDesktop = () => {
             />
           </picture>
         </div>
-      </div>
+      </a>
     </div>
   );
 };

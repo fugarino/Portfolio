@@ -32,6 +32,8 @@ const Aiirlabs = () => {
           <AiirlabsShowcase />
           <div className="block xl:hidden">
             <ProjectsBtns
+              siteLink="https://aiirlabs.com/"
+              githubLink="https://github.com/fugarino/crypto"
               href="/aiirlabs"
               color="#00000088"
               hoverColor="black"

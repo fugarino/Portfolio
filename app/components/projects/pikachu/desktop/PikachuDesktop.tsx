@@ -90,7 +90,13 @@ const PikachuDesktop = () => {
         </p>
         <div></div>
       </div>
-      <div className="bg-[#ecc53a] col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://pikachu-ten.vercel.app/"
+        aria-label="live-site"
+        className="bg-[#ecc53a] cursor-pointer col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end"
+      >
         <div className="flex items-center justify-between relative top-4">
           <h3 className="text-[1.2rem] font-bold">view drawing</h3>
           <picture>
@@ -101,8 +107,14 @@ const PikachuDesktop = () => {
             />
           </picture>
         </div>
-      </div>
-      <div className="bg-[#ecc53a] col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end">
+      </a>
+      <a
+        href="https://github.com/fugarino/pikachu"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Github"
+        className="bg-[#ecc53a] cursor-pointer col-span-3 h-[20rem] rounded-lg p-6 flex flex-col justify-end"
+      >
         <div className="flex items-center justify-between relative top-4">
           <h3 className="text-[1.2rem] font-bold">source code</h3>
           <picture>
@@ -113,7 +125,7 @@ const PikachuDesktop = () => {
             />
           </picture>
         </div>
-      </div>
+      </a>
       <div className="h-[20rem] overflow-hidden flex items-end justify-center col-span-6 rounded-lg bg-[#FAC823]">
         <picture>
           <img src="/pikachu_ashketchum 2.svg" alt="ash" />

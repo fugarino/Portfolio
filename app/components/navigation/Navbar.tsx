@@ -11,8 +11,18 @@ const Navbar = () => {
           CRIS
         </Link>
         <TwoHeaderLinks
-          leftLinkComponent={<HeaderLink linkURL="/" text="download cv" />}
-          rightLinkComponent={<HeaderLink linkURL="/" text="copy email" />}
+          leftLinkComponent={
+            <HeaderLink
+              linkURL="/Christian Fugarino CV 2023.pdf"
+              text="download cv"
+            />
+          }
+          rightLinkComponent={
+            <HeaderLink
+              linkURL="mailto:christian.fugarino.123@gmail.com"
+              text="send email"
+            />
+          }
         />
       </div>
       <Menu />
