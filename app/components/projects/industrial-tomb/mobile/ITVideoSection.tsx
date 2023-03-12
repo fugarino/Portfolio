@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import ITVideoM from "./ITVideoM";
+import ITVideo from "./ITVideo";
 
 const ITVideoSection = ({
   src,
@@ -40,7 +40,8 @@ const ITVideoSection = ({
           className="w-[calc(100%-3rem)] sm:w-[calc(100%-6rem)] max-w-[463px] h-[18rem] sm:h-[19rem]
 		 	    rounded-lg overflow-hidden bg-[#181a1c] shrink-0 snap-center snap-always"
         >
-          <ITVideoM isCarouselLeft={isCarouselLeft} src={src} />
+          {/* <ITVideoM isCarouselLeft={isCarouselLeft} src={src} /> */}
+          <ITVideo src={src} isCarouselLeft={isCarouselLeft} />
         </div>
         <div
           onClick={handleNextClick}
