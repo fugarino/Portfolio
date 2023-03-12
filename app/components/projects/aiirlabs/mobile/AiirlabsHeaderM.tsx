@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const AiirlabsHeaderM = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const cardRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(400);
 
