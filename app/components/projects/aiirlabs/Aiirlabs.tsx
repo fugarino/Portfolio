@@ -23,6 +23,7 @@ const Aiirlabs = () => {
               playsInline
               className="w-full h-full object-cover object-top top-0 rounded-lg"
             >
+              <source src="/aiir.webm" type="video/mp4" />
               <source src="/aiir.mp4" type="video/mp4" />
             </video>
           </div>
