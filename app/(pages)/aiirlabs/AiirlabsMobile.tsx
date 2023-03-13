@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AiirlabsCallToAction from "../../components/projects/aiirlabs/mobile/AiirlabsCallToAction";
 import AiirlabsHeaderM from "../../components/projects/aiirlabs/mobile/AiirlabsHeaderM";
 import Phone1 from "../../components/projects/aiirlabs/mobile/Phone1";
@@ -7,13 +8,13 @@ const AiirlabsMobile = () => {
     <div className="xl:hidden">
       <AiirlabsHeaderM />
       <div className="h-[15rem] sm:h-[20rem] w-full px-[1rem] sm:px-[2rem] mt-4">
-        <picture>
-          <img
-            src="/Frame 3.png"
-            alt="iphones"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </picture>
+        <Image
+          width={2069}
+          height={949}
+          src="/Frame 3.png"
+          alt="iphones"
+          className="w-full h-full object-cover rounded-lg"
+        />
       </div>
       <Phone1
         src="My Movie20"

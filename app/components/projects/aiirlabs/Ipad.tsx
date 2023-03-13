@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 const Ipad = () => {
@@ -27,9 +28,17 @@ const Ipad = () => {
         )}
       </div>
       <div className="absolute top-2 testt">
-        <picture>
+        <Image
+          width={499}
+          height={383}
+          priority
+          src="/iPad Pro 2019.png"
+          alt="iphones"
+          className="w-full object-cover rounded-lg h-[19rem]"
+        />
+        {/* <picture>
           <img src="/iPad Pro 2019.png" alt="ipad" className="h-[19rem]" />
-        </picture>
+        </picture> */}
       </div>
       <div className="absolute bg-[#EDEBEB] overflow-hidden rounded-[.5rem] top-[20px] w-[23.25rem] h-[17.5rem]">
         <video
