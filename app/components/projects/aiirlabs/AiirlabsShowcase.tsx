@@ -93,7 +93,7 @@ const AiirlabsShowcase = () => {
           </div>
           <div className="absolute overflow-hidden w-[10.5rem] h-[20rem] bg-white rounded-[1.4rem] top-[3.3rem]">
             <picture>
-              <img src="auth-e.png" alt="current events" />
+              <img src="hi.webp" alt="current events" />
             </picture>
           </div>
           {/* <div className="absolute top-[3.6rem] bg-black w-12 h-4 rounded-full"></div> */}

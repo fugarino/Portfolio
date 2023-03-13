@@ -38,7 +38,7 @@ const Hero = () => {
         <aside className="relative hidden lg:block bg-[#f1f1f1] rounded-lg overflow-hidden min-w-[14rem]">
           <picture>
             <img
-              src="/Untitled design (12).png"
+              src="/Untitled design (12).webp"
               alt="me"
               className="h-[14rem]"
             />
