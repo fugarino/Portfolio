@@ -116,3 +116,7 @@ a {
 .testtt {
   transform: translateX(-10%);
 }
+
+.hu {
+  transform: translateZ(0);
+}

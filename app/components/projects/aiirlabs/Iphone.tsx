@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRef, useState } from "react";
 
 const Iphone = () => {
@@ -28,21 +27,21 @@ const Iphone = () => {
         )}
       </div>
       <div className="absolute top-4 test">
-        <Image
+        {/* <Image
           width={825}
           height={1087}
           priority
           src="/iPhone 12 Pro (Wooden Hands).png"
           alt="iphones"
           className="w-full h-full min-w-[40rem] object-cover rounded-lg"
-        />
-        {/* <picture>
+        /> */}
+        <picture>
           <img
-            src="/iPhone 12 Pro (Wooden Hands).png"
+            src="/iPhone 12 Pro (Wooden Hands).webp"
             alt="iphone"
             className="min-w-[40rem]"
           />
-        </picture> */}
+        </picture>
       </div>
       <div className="absolute top-[29px] bg-[#EDEBEB] w-[17rem] rounded-[2rem] h-[36.6rem]">
         <video

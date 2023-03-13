@@ -6,7 +6,7 @@ const AiirlabsPromo1 = () => {
       <Image
         width={2069}
         height={949}
-        src="/Frame 3.png"
+        src="/Frame 3.webp"
         priority
         alt="iphones"
         className="w-full h-full object-cover rounded-lg"

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRef, useState } from "react";
 
 const MacBook = () => {
@@ -28,19 +27,23 @@ const MacBook = () => {
         )}
       </div>
       <div className="absolute top-2 testt">
-        <Image
+        {/* <Image
           width={686}
           height={414}
           priority
           src="/MacBook1.png"
           alt="iphones"
           className="w-full h-[19.5rem] object-cover rounded-lg"
-        />
-        {/* <picture>
-          <img src="/MacBook1.png" alt="macbook" className="h-[19.5rem]" />
-        </picture> */}
+        /> */}
+        <picture>
+          <img
+            src="/MacBook1.png"
+            alt="macbook"
+            className="h-[19.5rem] min-w-[20rem]"
+          />
+        </picture>
       </div>
-      <div className="absolute bg-[#EDEBEB] overflow-hidden rounded-[.5rem] top-[17px] w-[26rem] h-[16.6rem]">
+      <div className="absolute bg-[#EDEBEB] hu overflow-hidden rounded-[.5rem] top-[17px] w-[26rem] h-[16.6rem]">
         <video
           muted
           loop
