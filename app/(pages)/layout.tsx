@@ -1,6 +1,3 @@
-"use client";
-
-import { ScrollProvider } from "../../contexts/ScrollContext";
 import "../../styles/globals.css";
 
 export default function RootLayout({
@@ -11,9 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>
-        <ScrollProvider>{children}</ScrollProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
