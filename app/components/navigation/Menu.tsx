@@ -1,12 +1,25 @@
 "use client";
 
-import useMenu from "../../../hooks/useMenu";
+import { useEffect, useState } from "react";
 import MenuListButton from "../ui/buttons/menu-list-item/MenuListButton";
 import ToggleMenu from "../ui/buttons/toggle-menu/ToggleMenu";
 
 const Menu = () => {
-  const { isMenuOpen, darkBtnText, handleMenuClick, handleDarkModeClick } =
-    useMenu();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleEscPress = ({ key }: any) => {
+      if (key === "Escape" && isMenuOpen) setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", handleEscPress);
+    return () => {
+      window.removeEventListener("keydown", handleEscPress);
+    };
+  }, [isMenuOpen]);
+
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div
@@ -19,36 +32,38 @@ const Menu = () => {
       <menu
         className={`${
           isMenuOpen
-            ? "flex flex-col items-end justify-center h-[90vh] text-right -translate-x-[50px]"
+            ? "flex flex-col items-end justify-center h-[80vh] sm:h-[85vh] text-right -translate-x-[50px]"
             : "w-0 h-0 overflow-hidden"
         }`}
       >
         <MenuListButton
-          text="About"
+          text="aiirlabs"
           isMenuOpen={isMenuOpen}
-          onClick={handleMenuClick}
+          href="/aiirlabs"
+          alt={true}
         />
         <MenuListButton
-          text="Projects"
+          text="ITomb js"
           isMenuOpen={isMenuOpen}
-          onClick={handleMenuClick}
+          href="/industrialtomb"
         />
         <MenuListButton
-          text="Skills"
+          text="pikachu"
           isMenuOpen={isMenuOpen}
-          onClick={handleMenuClick}
+          href="/pikachu"
+        />
+        <MenuListButton isMenuOpen={isMenuOpen} href="/pikachu" line={true} />
+        <MenuListButton
+          text="linkedin"
+          isMenuOpen={isMenuOpen}
+          href="https://www.linkedin.com/in/christianfugarino/"
+          social={true}
         />
         <MenuListButton
-          text="Contact"
+          text="github"
           isMenuOpen={isMenuOpen}
-          onClick={handleMenuClick}
-        />
-        <MenuListButton
-          text="Dark Mode"
-          darkBtnText={darkBtnText}
-          isMenuOpen={isMenuOpen}
-          darkModeBtn={true}
-          handleDarkModeClick={handleDarkModeClick}
+          href="https://github.com/fugarino"
+          social={true}
         />
       </menu>
     </div>

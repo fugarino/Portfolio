@@ -1,54 +1,62 @@
-"use client";
-
-import { useScroll } from "../../../../../contexts/ScrollContext";
+import Link from "next/link";
 import styles from "./MenuListButton.module.css";
 
 interface IMenuListButton {
-  text: string;
+  text?: string;
   isMenuOpen: boolean;
-  darkModeBtn?: boolean;
-  darkBtnText?: string;
-  onClick?: () => void;
-  handleDarkModeClick?: () => void;
+  href: string;
+  alt?: boolean;
+  line?: true;
+  social?: true;
 }
 
 const MenuListButton = ({
+  line,
   text,
   isMenuOpen,
-  darkModeBtn,
-  darkBtnText,
-  onClick,
-  handleDarkModeClick,
+  href,
+  alt,
+  social,
 }: IMenuListButton) => {
-  const { setScrollTo }: any = useScroll();
-
-  if (darkModeBtn) {
+  if (line) {
+    return (
+      <div
+        className={`h-[1.5px] bg-black w-full ${
+          isMenuOpen ? styles.btnVisible : styles.btnHidden
+        }`}
+      ></div>
+    );
+  }
+  if (social) {
     return (
       <li
         className={`text-blue-dark dark:text-white ${
           isMenuOpen ? styles.btnVisible : styles.btnHidden
         }`}
       >
-        <button className={styles.btn} onClick={handleDarkModeClick}>
-          {darkBtnText}
-        </button>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={href}
+          aria-label="social"
+          className={styles.socials}
+        >
+          {text}
+          {alt && <span className="text-sm font-bold ml-[2px]">©</span>}
+        </a>
       </li>
     );
   }
-
-  const handleClick = () => {
-    if (onClick) onClick();
-    setScrollTo(text);
-  };
-
   return (
     <li
       className={`text-blue-dark dark:text-white ${
         isMenuOpen ? styles.btnVisible : styles.btnHidden
       }`}
-      onClick={handleClick}
     >
-      <button className={styles.btn}>{text}</button>
+      <Link href={href} className={styles.btn}>
+        {text}
+        {alt && <span className="text-sm font-bold ml-[2px]">©</span>}
+      </Link>
     </li>
   );
 };
