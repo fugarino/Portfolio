@@ -21,6 +21,7 @@ const Aiirlabs = () => {
               muted
               loop
               playsInline
+              poster="/Filler.webp"
               className="w-full h-full object-cover object-top top-0 rounded-lg"
             >
               <source src="/aiir.webm" type="video/mp4" />
