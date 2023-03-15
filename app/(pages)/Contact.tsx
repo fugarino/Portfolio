@@ -87,7 +87,7 @@ const Contact = () => {
             className="flex mt-10 pb-12 md:space-x-4 md:mx-[1.7rem] overflow-x-auto snap-x snap-mandatory"
           >
             <a
-              href="mailto:christian.fugarino.123@gmail.com"
+              href="mailto:christiantfugarino@gmail.com"
               className="bg-[#BED4BE] hover:bg-[#b6cbb6] transition-colors duration-150 ease-out border-[2px] cursor-pointer border-[#BED4BE] hover:border-[#aabeaa] text-black flex flex-col justify-between p-6 snap-center snap-always h-[11rem] sm:h-[12rem] w-[calc(100%-4rem)] sm:w-[calc(100%-4rem)] sm:max-w-[500px] md:max-w-none md:w-full rounded-lg shrink-0 md:shrink ml-[1.4rem] sm:ml-[1.7rem] md:ml-0 mr-[0.9rem] md:mr-0"
             >
               <h3 className="font-bold text-[1.8rem] sm:text-[2.5rem]">
@@ -118,7 +118,7 @@ const Contact = () => {
               </div>
             </a>
             <a
-              href="/Christian Fugarino CV 2023.pdf"
+              href="/Christian Fugarino Resume 2023.pdf"
               target="_blank"
               rel="noreferrer"
               className="bg-[#efe0c8] cursor-pointer transition-colors duration-150 ease-out hover:bg-[#ebdcc4] dark:hover:bg-[#e6d7bf] border-[2px] border-[#efe0c8] hover:border-[#e2d4be] dark:hover:border-[#d6c9b3] text-black p-6 snap-center snap-always h-[11rem] sm:h-[12rem] w-[calc(100%-4rem)] sm:w-[calc(100%-4rem)] sm:max-w-[500px] md:max-w-none md:w-[40%] lg:w-[35%] rounded-lg shrink-0 md:shrink mr-[0.45rem] sm:mr-[1.7rem] md:mr-0"

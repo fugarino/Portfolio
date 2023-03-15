@@ -13,13 +13,13 @@ const Navbar = () => {
         <TwoHeaderLinks
           leftLinkComponent={
             <HeaderLink
-              linkURL="/Christian Fugarino CV 2023.pdf"
+              linkURL="/Christian Fugarino Resume 2023.pdf"
               text="download cv"
             />
           }
           rightLinkComponent={
             <HeaderLink
-              linkURL="mailto:christian.fugarino.123@gmail.com"
+              linkURL="mailto:christiantfugarino@gmail.com"
               text="send email"
             />
           }
